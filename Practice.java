@@ -21,7 +21,7 @@ import java.util.Scanner;
 
 class triangel{
     public void display(int x ,int y , int z ){
-           if(x+y>z||y+z>x|| z+x>y){
+           if(x+y>z && y+z>x && z+x>y){
             System.out.println("Valid Traingel");
            }
            else{
