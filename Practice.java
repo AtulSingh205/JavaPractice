@@ -100,9 +100,9 @@ class cordinate{
 public class Practice{
   public static void main(String[] args) {
     Scanner inp =new Scanner(System.in);
-    System.out.print("Enter x-axis number: ")
+    System.out.print("Enter x-axis number: ");
     int a = inp.nextInt();
-    System.out.print("Enter Y-axis number: ")
+    System.out.print("Enter Y-axis number: ");
     int b = inp.nextInt();
     cordinate obj =new cordinate();
     obj.display(a, b);
