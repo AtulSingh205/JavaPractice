@@ -45,6 +45,8 @@
     
 // } 
 
+
+// -------------divisibelby 5 and 3--------------
 // import java.util.Scanner;
 
 // class divisibel{
@@ -73,3 +75,37 @@
 //         obj.display(n);
 //     }
 // }
+
+// --------------------find codinate---------------
+
+import java.util.Scanner;
+
+class cordinate{
+  public void display(int x, int y){
+     if(x==y){
+      System.out.print("This is an Origin of X-axis and Y-axis");
+    }
+    else if(x==(-y)){
+
+      System.out.print("This is an Secondquadrent");
+    }
+    else if((-x)==(-y)){
+      System.out.print("This is an Third Quadrant");
+    }
+    else if((-y)==x){
+      System.out.println("This is in Fourth Quardnent");
+    }
+  }
+}
+public class Practice{
+  public static void main(String[] args) {
+    Scanner inp =new Scanner(System.in);
+    System.out.print("Enter x-axis number: ")
+    int a = inp.nextInt();
+    System.out.print("Enter Y-axis number: ")
+    int b = inp.nextInt();
+    cordinate obj =new cordinate();
+    obj.display(a, b);
+    
+  }
+}
