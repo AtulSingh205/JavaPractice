@@ -78,42 +78,76 @@
 
 // --------------------find codinate---------------
 
-import java.util.Scanner;
+// import java.util.Scanner;
 
-class cordinate{
-  public void display(int x, int y){
-    if(x==0 && y==0){
-        System.out.print("This is on X-axis nd  Y-axis");
-    }
-    else if(x>0 && y>0){
-        System.out.print("This is an align in First quardent");
-    }
-    else if(x<0 && y>0){
-        System.out.print("This is align in  second quardent");
-    }
-    else if(x<0 && y<0){
-        System.out.print("This is align in third quardent");
-    }
-    else if(x>0 && y<0){
-        System.out.print("This is align in fourth quardent ");
-    }
-    else if(x==0){
-        System.out.println("This is allign on Y-axis");
-    }
-    else if(y==0){
-        System.out.println("this is allign on X-axis");
-    }
-  }
-}
-public class Practice{
-  public static void main(String[] args) {
-    Scanner inp =new Scanner(System.in);
-    System.out.print("Enter x-axis number: ");
-    int a = inp.nextInt();
-    System.out.print("Enter Y-axis number: ");
-    int b = inp.nextInt();
-    cordinate obj =new cordinate();
-    obj.display(a, b);
+// class cordinate{
+//   public void display(int x, int y){
+//     if(x==0 && y==0){
+//         System.out.print("This is on X-axis nd  Y-axis");
+//     }
+//     else if(x>0 && y>0){
+//         System.out.print("This is an align in First quardent");
+//     }
+//     else if(x<0 && y>0){
+//         System.out.print("This is align in  second quardent");
+//     }
+//     else if(x<0 && y<0){
+//         System.out.print("This is align in third quardent");
+//     }
+//     else if(x>0 && y<0){
+//         System.out.print("This is align in fourth quardent ");
+//     }
+//     else if(x==0){
+//         System.out.println("This is allign on Y-axis");
+//     }
+//     else if(y==0){
+//         System.out.println("this is allign on X-axis");
+//     }
+//   }
+// }
+// public class Practice{
+//   public static void main(String[] args) {
+//     Scanner inp =new Scanner(System.in);
+//     System.out.print("Enter x-axis number: ");
+//     int a = inp.nextInt();
+//     System.out.print("Enter Y-axis number: ");
+//     int b = inp.nextInt();
+//     cordinate obj =new cordinate();
+//     obj.display(a, b);
     
-  }
+//   }
+// }
+
+// ------------------------FInd Greatest out of three number ---------------------
+
+import java.util.Scanner;
+ class A{
+    
+    public void display(int x,int y,int z){
+       if(x>y && x>z){
+          System.out.print("X is gretest number ");
+       }
+       else if(y>x && y>z){
+        System.out.print(" Y is gretest number ");
+       }
+       else if(z>x && z>y){
+        System.out.print("Z is greatest number ");
+       }
+    }
+ }
+
+public class Practice{
+    public  static void main(String[] args){
+       Scanner inp = new Scanner(System.in);
+       System.out.print("Enter a number:");
+       int a = inp.nextInt();
+       System.out.print("Enter b number:");
+       int b = inp.nextInt();
+       System.out.print("Enter c number:");
+       int c = inp.nextInt();
+
+       A obj = new A();
+       obj.display(a, b, c);
+
+    }
 }
