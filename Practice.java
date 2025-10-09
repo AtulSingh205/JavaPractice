@@ -78,34 +78,42 @@
 
 // --------------------find codinate---------------
 
-// import java.util.Scanner;
+import java.util.Scanner;
 
-// class cordinate{
-//   public void display(int x, int y){
-//      if(x==y){
-//       System.out.print("This is an Origin of X-axis and Y-axis");
-//     }
-//     else if(x==(-y)){
-
-//       System.out.print("This is an Secondquadrent");
-//     }
-//     else if((-x)==(-y)){
-//       System.out.print("This is an Third Quadrant");
-//     }
-//     else if((-y)==x){
-//       System.out.println("This is in Fourth Quardnent");
-//     }
-//   }
-// }
-// public class Practice{
-//   public static void main(String[] args) {
-//     Scanner inp =new Scanner(System.in);
-//     System.out.print("Enter x-axis number: ");
-//     int a = inp.nextInt();
-//     System.out.print("Enter Y-axis number: ");
-//     int b = inp.nextInt();
-//     cordinate obj =new cordinate();
-//     obj.display(a, b);
+class cordinate{
+  public void display(int x, int y){
+    if(x==0 && y==0){
+        System.out.print("This is on X-axis nd  Y-axis");
+    }
+    else if(x>0 && y>0){
+        System.out.print("This is an align in First quardent");
+    }
+    else if(x<0 && y>0){
+        System.out.print("This is align in  second quardent");
+    }
+    else if(x<0 && y<0){
+        System.out.print("This is align in third quardent");
+    }
+    else if(x>0 && y<0){
+        System.out.print("This is align in fourth quardent ");
+    }
+    else if(x==0){
+        System.out.println("This is allign on Y-axis");
+    }
+    else if(y==0){
+        System.out.println("this is allign on X-axis");
+    }
+  }
+}
+public class Practice{
+  public static void main(String[] args) {
+    Scanner inp =new Scanner(System.in);
+    System.out.print("Enter x-axis number: ");
+    int a = inp.nextInt();
+    System.out.print("Enter Y-axis number: ");
+    int b = inp.nextInt();
+    cordinate obj =new cordinate();
+    obj.display(a, b);
     
-//   }
-// }
+  }
+}
