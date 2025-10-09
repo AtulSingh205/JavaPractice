@@ -120,34 +120,34 @@
 
 // ------------------------FInd Greatest out of three number ---------------------
 
-import java.util.Scanner;
- class A{
+// import java.util.Scanner;
+//  class A{
     
-    public void display(int x,int y,int z){
-       if(x>y && x>z){
-          System.out.print("X is gretest number ");
-       }
-       else if(y>x && y>z){
-        System.out.print(" Y is gretest number ");
-       }
-       else if(z>x && z>y){
-        System.out.print("Z is greatest number ");
-       }
-    }
- }
+//     public void display(int x,int y,int z){
+//        if(x>y && x>z){
+//           System.out.print("X is gretest number ");
+//        }
+//        else if(y>x && y>z){
+//         System.out.print(" Y is gretest number ");
+//        }
+//        else if(z>x && z>y){
+//         System.out.print("Z is greatest number ");
+//        }
+//     }
+//  }
 
-public class Practice{
-    public  static void main(String[] args){
-       Scanner inp = new Scanner(System.in);
-       System.out.print("Enter a number:");
-       int a = inp.nextInt();
-       System.out.print("Enter b number:");
-       int b = inp.nextInt();
-       System.out.print("Enter c number:");
-       int c = inp.nextInt();
+// public class Practice{
+//     public  static void main(String[] args){
+//        Scanner inp = new Scanner(System.in);
+//        System.out.print("Enter a number:");
+//        int a = inp.nextInt();
+//        System.out.print("Enter b number:");
+//        int b = inp.nextInt();
+//        System.out.print("Enter c number:");
+//        int c = inp.nextInt();
 
-       A obj = new A();
-       obj.display(a, b, c);
+//        A obj = new A();
+//        obj.display(a, b, c);
 
-    }
-}
+//     }
+// }
