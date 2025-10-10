@@ -179,17 +179,17 @@
 
 // ---------------------Terneryor-----------------
 
-import java.util.Scanner;
-class A{
-    public void display(int x ){
-        System.out.print((x%2==0) ? "Even" :"odd");
-    }
-}
+// import java.util.Scanner;
+// class A{
+//     public void display(int x ){
+//         System.out.print((x%2==0) ? "Even" :"odd");
+//     }
+// }
 
-public class Practice{
-  public static void main(String[] args){
-    Scanner inp =new Scanner(System.in);
-    System.out.println("Enter a number: ");
-    int n = inp.nextInt();
-  }
-}
+// public class Practice{
+//   public static void main(String[] args){
+//     Scanner inp =new Scanner(System.in);
+//     System.out.println("Enter a number: ");
+//     int n = inp.nextInt();
+//   }
+// }
