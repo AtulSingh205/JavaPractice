@@ -154,25 +154,25 @@
 
 // -------------------Even odd--------------
 
-import java.util.Scanner;
+// import java.util.Scanner;
 
- class  A{
-    public void display(int a){
-         if(a%2==0){
-            System.out.print("this is an even number");
-         } 
-         else{
-            System.out.print("This is an odd number");
-         }       
-    }
-} 
+//  class  A{
+//     public void display(int a){
+//          if(a%2==0){
+//             System.out.print("this is an even number");
+//          } 
+//          else{
+//             System.out.print("This is an odd number");
+//          }       
+//     }
+// } 
 
-public class Practice{
-    public static void main(String[] args) {
-        Scanner inp  =new Scanner(System.in);
-        System.out.print("Enter a number: ");
-        int n = inp.nextInt();
-         A obj =new A();
-         obj.display(n);
-    }
-}
+// public class Practice{
+//     public static void main(String[] args) {
+//         Scanner inp  =new Scanner(System.in);
+//         System.out.print("Enter a number: ");
+//         int n = inp.nextInt();
+//          A obj =new A();
+//          obj.display(n);
+//     }
+// }
