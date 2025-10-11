@@ -189,7 +189,30 @@
 // public class Practice{
 //   public static void main(String[] args){
 //     Scanner inp =new Scanner(System.in);
-//     System.out.println("Enter a number: ");
+//     System.out.print("Enter a number: ");
 //     int n = inp.nextInt();
+//     A obj = new A();
+//     obj.display(n);
 //   }
 // }
+
+// --------------------Print even 1-100--------------
+
+import java.util.Scanner;
+ class  A{
+  public void display(int x ){
+     for(int i = 0;i<x;i++){
+      if(i%2==0){
+        System.out.print("this is an Even number: "+ i);
+      }
+  }
+} 
+
+
+public class Practice {
+public static void main(String[] args) {
+  Scanner inp = new Scanner(System.in);
+  System.out.print("Enter a number: ");
+  int n = inp.nextInt();
+}
+}
