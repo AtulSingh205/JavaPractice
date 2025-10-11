@@ -218,3 +218,28 @@
 //     obj.display(n);
 //   }
 // }
+
+// -------------------Print  odd number Whish Divisibel by 3----------------
+
+import java.util.Scanner;
+ class  A{
+  public void display(int x){
+    int count =0;
+    for(int i =1;i<=x;i++){
+      if(i%100!=0 && i%3==0){
+        System.out.println("Thhis is an odd or Divisibel by 3: " + i);
+        count++;
+      }
+    }
+    System.out.println("This is an number of divided by 3 "+count);
+  }    
+} 
+public class Practice{
+  public static void main(String[] args) {
+    Scanner inp = new Scanner(System.in);
+    System.out.print("Enter a number: ");
+    int n = inp.nextInt();
+    A obj = new A();
+    obj.display(n);
+  }
+}
