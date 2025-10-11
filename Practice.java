@@ -197,24 +197,24 @@
 
 // --------------------Print even 1-100--------------
 
-import java.util.Scanner;
+// import java.util.Scanner;
 
-class A {
-  public void display(int x) {
-    for (int i = 0; i < x; i++) {
-      if (i % 2 == 0) {
-        System.out.println("This is an Even number: " + i);
-      }
-    }
-  }
-}
+// class A {
+//   public void display(int x) {
+//     for (int i = 0; i < x; i++) {
+//       if (i % 2 == 0) {
+//         System.out.println("This is an Even number: " + i);
+//       }
+//     }
+//   }
+// }
 
-public class Practice {
-  public static void main(String[] args) {
-    Scanner inp = new Scanner(System.in);
-    System.out.print("Enter a End number to find even : ");
-    int n = inp.nextInt();
-    A obj = new A();
-    obj.display(n);
-  }
-}
+// public class Practice {
+//   public static void main(String[] args) {
+//     Scanner inp = new Scanner(System.in);
+//     System.out.print("Enter a End number to find even : ");
+//     int n = inp.nextInt();
+//     A obj = new A();
+//     obj.display(n);
+//   }
+// }
