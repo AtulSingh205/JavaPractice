@@ -246,26 +246,29 @@
 
 // -------------for loop ap---------
 
-import java.util.Scanner;
+// import java.util.Scanner;
 
-class Ap {
-  public void display(int x) {
-    int a = 99;
-    int b = 4;
-    for (int i = 1; i >= x; i++) {
-      System.out.print(a + " ");
-      a -= b;
-    }
-  }
-}
+// class Ap {
+//   public void display(int x , int y) {
+//     System.out.print("hh chl rh hai!");
+//     int a = x;
+//     int b = y;
+//     for (int i = 1; i <= x; i--) {
+//       System.out.print(a + " ");
+//       a -= b;
+//     }
+//   }
+// }
 
-public class Practice {
-  public static void main(String[] args) {
-    Scanner inp = new Scanner(System.in);
-    System.out.print("Enter a n number: ");
-    int n = inp.nextInt();
-    Ap obj = new Ap();
-     obj.display(n);
+// public class Practice {
+//   public static void main(String[] args) {
+//     Scanner inp = new Scanner(System.in);
+//     System.out.print("Enter a n number: ");
+//     int n = inp.nextInt();
+//     System.out.print("Enter a n number: ");
+//     int m = inp.nextInt();
+//     Ap obj = new Ap();
+//      obj.display(n,m);
 
-  }
-}
+//   }
+// }
