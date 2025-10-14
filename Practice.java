@@ -270,3 +270,61 @@
 
 //   }
 // }
+
+// -----------------GP-------------------
+
+// import java.util.Scanner;
+
+// class Gp {
+//   public void display(int x, int y) {
+//     int a = x;
+//     int b = y;
+//     int n = 10;
+//     for (int i = 0; i <= n; i++) {
+//       System.out.println(a);
+//       a*=b;
+//     }
+//   }
+// }
+
+// public class Practice {
+//   public static void main(String[] args) {
+//     Scanner inp = new Scanner(System.in);
+//     System.out.print("Enter a number: ");
+//     int n = inp.nextInt();
+
+//     System.out.print("Enter a number: ");
+//     int m = inp.nextInt();
+//     Gp obj = new Gp();
+//     obj.display(n, m);
+//   }
+// }
+
+// --------------------pairof n-1 --------------
+
+
+class pair {
+  public void display() {
+    int n = 10;
+    for (int i = 1; i < n; i++) {
+      System.out.print(i);
+      System.out.print(" ");
+      System.out.print(n);
+      System.out.print(" , ");
+      n-=1;
+    }
+  }
+
+}
+
+public class Practice {
+  public static void main(String[] args) {
+      // Scanner inp= new Scanner;
+      // System.out.print("enter a number: ");
+      // int n = inp.nextInt();
+      // System.out.print("enter a number: ");
+      // int m = inp.nextInt();
+      pair obj = new pair();
+      obj.display();
+    }
+}
