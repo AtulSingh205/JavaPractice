@@ -365,7 +365,8 @@ public class Practice{
     int n = inp.nextInt();
     int i =1;
     while (i<=n) {
-      System.out.print("Ente ");
+      System.out.print("Hello while!");
+      i++;
     }
   }
 }
