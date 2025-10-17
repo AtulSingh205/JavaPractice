@@ -302,29 +302,70 @@
 
 // --------------------pairof n-1 --------------
 
+// class pair {
+//   public void display() {
+//     int n = 10;
+//     for (int i = 1; i < n; i++) {
+//       System.out.print(i);
+//       System.out.print(" ");
+//       System.out.print(n);
+//       System.out.print(" , ");
+//       n-=1;
+//     }
+//   }
 
-class pair {
-  public void display() {
-    int n = 10;
-    for (int i = 1; i < n; i++) {
-      System.out.print(i);
-      System.out.print(" ");
-      System.out.print(n);
-      System.out.print(" , ");
-      n-=1;
+// }
+
+// public class Practice {
+//   public static void main(String[] args) {
+//       // Scanner inp= new Scanner;
+//       // System.out.print("enter a number: ");
+//       // int n = inp.nextInt();
+//       // System.out.print("enter a number: ");
+//       // int m = inp.nextInt();
+//       pair obj = new pair();
+//       obj.display();
+//     }
+// }
+
+// -------------------------find compostite number find Prime number ------------------
+
+// import java.util.Scanner;
+
+// public class Practice {
+//   public static void main(String[] args) {
+//     Scanner inp = new Scanner(System.in);
+//     System.out.print("Enter a nmber: ");
+//     int n = inp.nextInt();
+//     boolean Flag = true;
+//     for (int i = 2; i <= Math.sqrt(n); i++) {
+//       if (n % i == 0) {
+//         Flag = false;
+//       }
+//     }
+//     if (Flag == false) {
+//       System.out.print("Composite nunber ");
+//     } else if (n == 1) {
+//       System.out.print("This is not a composite number and not a Prime number");
+//     } else {
+//       System.out.print("this is an Prime number ");
+//     }
+//   }
+// }
+
+
+// --------------------practice while loop ------------------------
+
+import java.util.Scanner;
+
+public class Practice{
+  public static void main(String[] args) {
+    Scanner inp = new Scanner(System.in);
+    System.out.print("Enter a number: ");
+    int n = inp.nextInt();
+    int i =1;
+    while (i<=n) {
+      System.out.print("Ente ");
     }
   }
-
-}
-
-public class Practice {
-  public static void main(String[] args) {
-      // Scanner inp= new Scanner;
-      // System.out.print("enter a number: ");
-      // int n = inp.nextInt();
-      // System.out.print("enter a number: ");
-      // int m = inp.nextInt();
-      pair obj = new pair();
-      obj.display();
-    }
 }
