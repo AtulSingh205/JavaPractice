@@ -356,6 +356,26 @@
 
 // --------------------practice while loop ------------------------
 
+// import java.util.Scanner;
+
+// public class Practice{
+//   public static void main(String[] args) {
+//     Scanner inp = new Scanner(System.in);
+//     System.out.print("Enter a number: ");
+//     int n = inp.nextInt();
+//     int i =1;
+//     int sum =0;
+//     while (i<=n) {
+//       System.out.println(i);
+//        sum+=i;
+//       i++;
+//     }
+//     System.out.println("A sum of all number is: "+sum);
+//   }
+// }
+
+// -----------------------count number s tore in identifier -------------
+
 import java.util.Scanner;
 
 public class Practice{
@@ -363,10 +383,12 @@ public class Practice{
     Scanner inp = new Scanner(System.in);
     System.out.print("Enter a number: ");
     int n = inp.nextInt();
-    int i =1;
-    while (i<=n) {
-      System.out.println("Hello while!");
-      i++;
+    int cnt =0;
+    while(n!=0){
+     n/=10;
+      cnt++;
     }
+    System.out.print("A conut number of element in number "+cnt);
   }
+
 }
