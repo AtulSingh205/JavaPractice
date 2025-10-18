@@ -395,23 +395,24 @@
 
 // ---------------------sum of digit by using while --------------------
 
-import java.util.Scanner;
+// import java.util.Scanner;
 
-public class Practice{
-  public static void main(String[] args) {
-    Scanner inp = new Scanner(System.in);
-    System.out.print("Enter a number: ");
-    int n = inp.nextInt();
-    int sum = 0;
-    int cnt=0;
-    int b=0 ;
-    while (n!=0){
-      b =  n%10;
-      sum+=b;
-      n/=10;
-      cnt++;
-    }
-    System.out.println("A number of elemen store in identifier is "+cnt);
-    System.out.print("A number of sum is: "+sum);
-  }
-}
+// public class Practice{
+//   public static void main(String[] args) {
+//     Scanner inp = new Scanner(System.in);
+//     System.out.print("Enter a number: ");
+//     int n = inp.nextInt();
+//     int sum = 0;
+//     int cnt=0;
+//     int b=0 ;
+//     while (n!=0){
+//       b =  n%10;
+//       sum+=b;
+//       n/=10;
+//       cnt++;
+//     }
+//     System.out.println("A number of elemen store in identifier is "+cnt);
+//     System.out.print("A number of sum is: "+sum);
+//   }
+// }
+
