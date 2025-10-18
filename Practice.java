@@ -416,3 +416,23 @@
 //   }
 // }
 
+// ----------------reverse a number ----------------
+
+// import java.util.Scanner;
+
+// public class Practice{
+//   public static void main(String[] args) {
+//     Scanner inp = new Scanner(System.in);
+//     // System.out.print("Enter a  number: ");
+//     int n = 1286;
+//     int r = 0;
+//     while (n!=0) {
+//      int rem = n%10;
+//       r=r*10 + rem;
+//       n/=10;
+//     }
+//     System.out.print(r);
+//   }
+// }
+
+// ----------------
