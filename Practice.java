@@ -436,3 +436,15 @@
 // }
 
 // ----------------factorial-----------
+public class Practice {
+
+     public static void main(String[] args) {
+        int n = 5;
+        int temp = 1;
+        while (n!=0){
+           temp *=n;
+           n--;
+        }
+        System.out.print(temp);
+     }
+}
