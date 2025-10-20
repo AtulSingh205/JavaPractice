@@ -353,7 +353,6 @@
 //   }
 // }
 
-
 // --------------------practice while loop ------------------------
 
 // import java.util.Scanner;
@@ -448,3 +447,32 @@
 //         System.out.print(temp);
 //      }
 // }
+
+// -------------------squre of number ---------------------
+// public class Practice {
+//    public static void main(String[] args) {
+//       int a = 2;
+//       int b = 5;
+//       int i = 1;
+//       int sqr = 1;
+//       while (i <= b) {
+//          sqr *= a;
+//          i++;
+//       }
+//       System.out.print(sqr);
+//    }
+// }
+ 
+// ----------------pattern1---------------
+public class Practice {
+
+   public static void main(String[] args) {
+      int n = 4;
+      for (int i = 1;i<=n;i++){
+         for(int j = i;j<=n;j++){
+            System.out.print("*");
+         }
+         System.out.println(" ");
+      }
+   }
+}
