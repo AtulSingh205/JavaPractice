@@ -524,6 +524,6 @@ public class Practice {
          System.out.println();
       }
    }
-   else System.out.println("Please ente a odd number 🙏");
+   else System.out.println("Please ente a odd number ");
    }
 }
