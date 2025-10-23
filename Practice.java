@@ -508,22 +508,22 @@
 // }
 
 // ---------------pyramid------------------
-public class Practice {
+// public class Practice {
 
-   public static void main(String[] args) {
+//    public static void main(String[] args) {
       
-      int n = 6;
-      if(n%2!=0){
-      for(int i = 0;i<n;i++){
-         for (int j = 1;j<=i;j++){
-            System.out.print(" ");
-         }
-         for(int k = 1;k<=n-i*2;k++){
-          System.out.print(k);
-         }
-         System.out.println();
-      }
-   }
-   else System.out.println("Please ente a odd number ");
-   }
-}
+//       int n = 6;
+//       if(n%2!=0){
+//       for(int i = 0;i<n;i++){
+//          for (int j = 1;j<=i;j++){
+//             System.out.print(" ");
+//          }
+//          for(int k = 1;k<=n-i*2;k++){
+//           System.out.print(k);
+//          }
+//          System.out.println();
+//       }
+//    }
+//    else System.out.println("Please ente a odd number ");
+//    }
+// }
