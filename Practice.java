@@ -462,7 +462,7 @@
 //       System.out.print(sqr);
 //    }
 // }
- 
+
 // ----------------pattern1---------------
 // public class Practice {
 
@@ -511,7 +511,7 @@
 // public class Practice {
 
 //    public static void main(String[] args) {
-      
+
 //       int n = 6;
 //       if(n%2!=0){
 //       for(int i = 0;i<n;i++){
@@ -568,7 +568,6 @@
 // }
 
 // -------------------number patern-----------
-
 
 // public class Practice {
 
@@ -640,22 +639,38 @@
 
 // -----------------------1 121 12321 pattern -----------------
 
-public class Practice {
+// public class Practice {
 
+//     public static void main(String[] args) {
+//         int n = 4;
+//         for(int i = 1;i<=n;i++){
+//             for(int j = 1;j<=n-i;j++){
+//                 System.out.print(" ");
+//             }
+//             for(int k = 1;k<=i;k++){
+//                 System.out.print(k);
+//             }
+//             for(int k = i-1;k>=1;k--){
+//                 System.out.print(k);
+//             }
+//             System.out.println();
+//         }
+
+//     }
+// }
+
+// ---------------------pattern----------
+public class Practice {
     public static void main(String[] args) {
         int n = 4;
-        for(int i = 1;i<=n;i++){
-            for(int j = 1;j<=n-i;j++){
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < i; j++) {
                 System.out.print(" ");
             }
-            for(int k = 1;k<=i;k++){
-                System.out.print(k);
-            }
-            for(int k = i-1;k>=1;k--){
-                System.out.print(k);
+            for (int k = 0; k < n - i; k++) {
+                System.out.print("*");
             }
             System.out.println();
         }
-
     }
 }
