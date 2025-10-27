@@ -660,17 +660,46 @@
 // }
 
 // ---------------------pattern----------
+// public class Practice {
+//     public static void main(String[] args) {
+//         int n = 4;
+//         for (int i = 0; i < n; i++) {
+//             for (int j = 0; j < i; j++) {
+//                 System.out.print(" ");
+//             }
+//             for (int k = 0; k < n - i; k++) {
+//                 System.out.print("*");
+//             }
+//             System.out.println();
+//         }
+//     }
+// }
+
+// ----------------------fulldimaond------------
 public class Practice {
+
     public static void main(String[] args) {
-        int n = 4;
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < i; j++) {
+        int n = 3;
+        for(int i = 1;i<=n;i++){
+            for(int j = 1;j<=n-i;j++){
                 System.out.print(" ");
             }
-            for (int k = 0; k < n - i; k++) {
+            for(int k=1;k<=i*2-1;k++){
+                System.out.print(("*"));
+            }
+
+        }
+         System.out.println();
+
+        for(int l = 0;l<n-1;l++){
+            for(int m= 0;m<l;m++){
+                System.out.print(" ");
+            }
+            for(int o = 0;0<n-l*2;o++){
                 System.out.print("*");
             }
-            System.out.println();
         }
+        System.out.println();
+    
     }
 }
