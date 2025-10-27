@@ -685,21 +685,22 @@ public class Practice {
                 System.out.print(" ");
             }
             for(int k=1;k<=i*2-1;k++){
-                System.out.print(("*"));
-            }
-
-        }
-         System.out.println();
-
-        for(int l = 0;l<n-1;l++){
-            for(int m= 0;m<l;m++){
-                System.out.print(" ");
-            }
-            for(int o = 0;0<n-l*2;o++){
                 System.out.print("*");
             }
+         System.out.println();
+
         }
-        System.out.println();
+
+        for(int l = 0;l<n-1;l++){
+            for(int m= 0;m<=l;m++){
+                System.out.print(" ");
+            }
+            for(int o = 0;o<n-l*2;o++){
+                System.out.print("*");
+            }
+                    System.out.println();
+
+        }
     
     }
 }
