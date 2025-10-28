@@ -721,9 +721,11 @@ public class Practice {
         for(int i = 0;i<n;i++){
             arr[i]=inp.nextInt();
         }
+        int sum = 0;
         for(int j =0;j<n;j++){
-            System.out.print(arr[j]);
+            sum+=arr[j];
         }
+        System.out.print(sum);
 
     }
 }
