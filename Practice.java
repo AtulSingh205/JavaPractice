@@ -676,31 +676,54 @@
 // }
 
 // ----------------------fulldimaond------------
+// public class Practice {
+
+//     public static void main(String[] args) {
+//         int n = 3;
+//         for(int i = 1;i<=n;i++){
+//             for(int j = 1;j<=n-i;j++){
+//                 System.out.print(" ");
+//             }
+//             for(int k=1;k<=i*2-1;k++){
+//                 System.out.print("*");
+//             }
+//          System.out.println();
+
+//         }
+
+//         for(int l = 0;l<n-1;l++){
+//             for(int m= 0;m<=l;m++){
+//                 System.out.print(" ");
+//             }
+//             for(int o = 0;o<n-l*2;o++){
+//                 System.out.print("*");
+//             }
+//                     System.out.println();
+
+//         }
+    
+//     }
+// }
+
+// -------------------------Array----------------------
+// ------------------------Array-sum----------------------
+
+import java.util.Scanner;
+
 public class Practice {
 
     public static void main(String[] args) {
-        int n = 3;
-        for(int i = 1;i<=n;i++){
-            for(int j = 1;j<=n-i;j++){
-                System.out.print(" ");
-            }
-            for(int k=1;k<=i*2-1;k++){
-                System.out.print("*");
-            }
-         System.out.println();
-
+        Scanner inp = new  Scanner(System.in);
+        System.out.print("Enter a Size of arr: ");
+        int n = inp.nextInt();
+        int[] arr  = new int[n];
+        System.out.print("Enter a element: ");
+        for(int i = 0;i<n;i++){
+            arr[i]=inp.nextInt();
+        }
+        for(int j =0;j<n;j++){
+            System.out.print(arr[j]);
         }
 
-        for(int l = 0;l<n-1;l++){
-            for(int m= 0;m<=l;m++){
-                System.out.print(" ");
-            }
-            for(int o = 0;o<n-l*2;o++){
-                System.out.print("*");
-            }
-                    System.out.println();
-
-        }
-    
     }
 }
