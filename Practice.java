@@ -802,3 +802,15 @@
 // }
 
 // --------------------------array deep copy or shadhow copy-----------------
+public class Practice {
+
+  public static void main(String[] args) {
+    int[] x = {10,20,30,40,50};
+    System.out.println(x[1]);
+  
+    System.out.println("After a shalllow copy");
+     int[] y=x;
+     y[1] = 200;
+     System.out.println(x[1]);
+  }
+}
