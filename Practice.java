@@ -701,31 +701,104 @@
 //                     System.out.println();
 
 //         }
-    
+
 //     }
 // }
 
 // -------------------------Array----------------------
 // ------------------------Array-sum----------------------
 
-import java.util.Scanner;
+// import java.util.Scanner;
 
-public class Practice {
+// public class Practice {
 
-    public static void main(String[] args) {
-        Scanner inp = new  Scanner(System.in);
-        System.out.print("Enter a Size of arr: ");
-        int n = inp.nextInt();
-        int[] arr  = new int[n];
-        System.out.print("Enter a element: ");
-        for(int i = 0;i<n;i++){
-            arr[i]=inp.nextInt();
-        }
-        int sum = 0;
-        for(int j =0;j<n;j++){
-            sum+=arr[j];
-        }
-        System.out.print(sum);
+//     public static void main(String[] args) {
+//         Scanner inp = new  Scanner(System.in);
+//         System.out.print("Enter a Size of arr: ");
+//         int n = inp.nextInt();
+//         int[] arr  = new int[n];
+//         System.out.print("Enter a element: ");
+//         for(int i = 0;i<n;i++){
+//             arr[i]=inp.nextInt();
+//         }
+//         int sum = 0;
+//         for(int j =0;j<n;j++){
+//             sum+=arr[j];
+//         }
+//         System.out.print(sum);
 
-    }
-}
+//     }
+// }
+
+// -------------------max in arr--------------------
+
+// import java.util.Scanner;
+
+// public class Practice {
+
+//     public static void main(String[] args) {
+//         Scanner inp = new Scanner(System.in);
+//         System.out.print("Entera size");
+//         int n = inp.nextInt();
+//         int[] arr = new int[n];
+//         System.out.print("Entera element of arr");
+//         for (int i = 0; i < n; i++) {
+//             arr[i] = inp.nextInt();
+//         }
+//         int max =0;
+//         for(int j =0;j<n;j++){
+//             if(arr[j]>max){
+//                 max = arr[j];
+//             }
+//         }
+//             System.out.print("Greatest element in the array is: "+max);
+
+//     }
+// }
+
+// -----------------play with arr----------------
+
+// import java.util.Scanner;
+
+// public class Practice {
+
+//     public static void main(String[] args) {
+//         Scanner inp = new Scanner(System.in);
+//         System.out.print("Enter a size of n : ");
+//         int n=inp.nextInt();
+//         String[] arr= new String[n]; 
+//         System.out.print("Enter a char: ");
+//         for(int i =0;i<arr.length;i++){
+//          arr[i] = inp.next();
+//         }
+//        System.out.print("char in array: ");
+//        for(int j =0;j<arr.length;j++){
+//          System.out.print(arr[j]);
+//        }
+//     }
+// }
+
+// -------------------practicee----------------
+
+// import java.util.Scanner;
+
+// public class Practice{
+//   public static void main(String[] args) {
+//     Scanner inp = new Scanner(System.in);
+//     System.out.print("Enter a size: ");
+//     int n = inp.nextInt();
+//     String arr[]= new String[n];
+
+//     System.out.print("Take input of element "+arr.length);
+//     for(int i = 0;i<arr.length;i++){
+//       arr[i]=inp.next();
+//     }
+
+//     System.out.print("input element in array");
+//     for(int j = 0;j<arr.length;j++){
+//       System.out.print(arr[j]);
+//     }
+//   }
+// }
+
+// --------------------------array deep copy or shadhow copy-----------------
