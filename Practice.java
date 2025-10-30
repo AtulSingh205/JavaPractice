@@ -861,32 +861,73 @@
 
 // ----------------------------sortarray---------------------
 
-import java.util.Arrays;
+// import java.util.Arrays;
+// import java.util.Scanner;
+
+// public class Practice {
+
+//   public static void main(String[] args) {
+//     Scanner inp = new Scanner(System.in);
+    
+//     System.out.print("Enter a size: ");
+//     int n = inp.nextInt();
+//     int arr[]=new int[n];
+
+//     System.out.println("Enter a elemnt in arr");
+//     for(int i = 0;i<arr.length;i++){
+//       arr[i]=inp.nextInt();
+//     }
+//     print(arr);
+//     Arrays.sort(arr);
+//     print(arr);
+//     }
+
+//  public static void print(int[] arr){
+//       for(int j =0;j<arr.length;j++){
+//         System.out.print(arr[j]+" ");
+//       }
+//       System.out.println();
+
+//   }
+// }
+
+// -------------------mulbyeevn add by odd---------------
+
 import java.util.Scanner;
 
 public class Practice {
 
   public static void main(String[] args) {
     Scanner inp = new Scanner(System.in);
-    
-    System.out.print("Enter a size: ");
-    int n = inp.nextInt();
-    int arr[]=new int[n];
+    System.out.println("Enter a size of arr");
+    int n =inp.nextInt();
 
-    System.out.println("Enter a elemnt in arr");
-    for(int i = 0;i<arr.length;i++){
+    int arr[]= new int[n];
+    System.out.println("Enter a elemt: ");
+    for(int i = 0;i<n;i++){
       arr[i]=inp.nextInt();
     }
     print(arr);
-    Arrays.sort(arr);
+    evnodd(arr);
+    System.out.println("After a evnodd opration");
     print(arr);
+  }
+  public static void print(int[] arr){
+    for(int j = 0;j<arr.length;j++){
+      System.out.print(arr[j]+" ");
     }
+    System.out.println();
+  }
 
- public static void print(int[] arr){
-      for(int j =0;j<arr.length;j++){
-        System.out.print(arr[j]+" ");
+  public static void evnodd(int[] arr){
+    for(int i = 0;i<arr.length;i++){
+      if(i%2==0){
+        arr[i]=arr[i]*2;
       }
-      System.out.println();
-
+      else{
+        arr[i]=arr[i]+10;
+      }
+    }
+    System.out.println();
   }
 }
