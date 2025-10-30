@@ -802,15 +802,91 @@
 // }
 
 // --------------------------array deep copy or shadhow copy-----------------
+
+// import java.lang.reflect.Array;
+// import java.util.Arrays;
+
+// public class Practice {
+
+//   public static void main(String[] args) {
+//     int[] x = {10,20,30,40,50};
+//     System.out.println("original array");
+//     System.out.println(x[1]);
+
+//     System.out.println("After a shalllow copy");
+//      int[] y=x;
+//      y[1] = 200;
+//      System.out.println(x[1]);
+
+//      System.out.println("After deep copy");
+//      int[] z = Arrays.copyOf(x, x.length);//deepcopy
+//      z[1]=100;
+//      System.out.println("After deep clone");
+//      System.out.println(z[1]);
+//      System.out.println("Which arry copy z");
+//      System.out.println(x[1]);
+//   }
+// }
+
+// ---------------sumofpair==target----------------
+
+// import java.util.Scanner;
+
+// public class Practice {
+
+//   public static void main(String[] args) {
+//     Scanner sc = new Scanner(System.in);
+
+//     System.out.println("enter a size: ");
+//     int n = sc.nextInt();
+//     int arr[] = new int[n];
+
+//     System.out.print("Enter a element ");
+//     for(int i =0;i<arr.length;i++){
+//       arr[i]=sc.nextInt();
+//     }
+
+//     int target = 12;
+//     for(int i =0;i<arr.length;i++){
+//       for(int j =i+1;j<arr.length;j++){
+//        int sum = arr[i]+arr[j];
+//         if(sum==target){
+//           System.out.println("A sum of Pair in array: "+arr[i]+"and"+arr[j]);
+//         }
+//       }
+//     }
+//     sc.close();
+//   }
+// }
+
+// ----------------------------sortarray---------------------
+
+import java.util.Arrays;
+import java.util.Scanner;
+
 public class Practice {
 
   public static void main(String[] args) {
-    int[] x = {10,20,30,40,50};
-    System.out.println(x[1]);
-  
-    System.out.println("After a shalllow copy");
-     int[] y=x;
-     y[1] = 200;
-     System.out.println(x[1]);
+    Scanner inp = new Scanner(System.in);
+    
+    System.out.print("Enter a size: ");
+    int n = inp.nextInt();
+    int arr[]=new int[n];
+
+    System.out.println("Enter a elemnt in arr");
+    for(int i = 0;i<arr.length;i++){
+      arr[i]=inp.nextInt();
+    }
+    print(arr);
+    Arrays.sort(arr);
+    print(arr);
+    }
+
+ public static void print(int[] arr){
+      for(int j =0;j<arr.length;j++){
+        System.out.print(arr[j]+" ");
+      }
+      System.out.println();
+
   }
 }
