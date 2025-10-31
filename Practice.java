@@ -934,41 +934,78 @@
 
 // --------------------lenear search--------------
 
-import java.util.Scanner;
+// import java.util.Scanner;
 
+// public class Practice {
+
+//   public static void main(String[] args) {
+//     Scanner inp = new Scanner(System.in);
+
+//     System.out.println("Enter a size of element: ");
+//     int n = inp.nextInt();
+
+//     int[] arr= new int[n];
+
+//     System.out.println("Enter a element in arr");
+//     for(int i =0;i<arr.length;i++){
+//         arr[i]=inp.nextInt();
+//     }
+//    print(arr);
+
+//      System.out.print("Enter Trarget num: ");
+//     int target=inp.nextInt();
+//       boolean found = false;
+//       for(int j=0;j<arr.length;j++ ){
+//         if(arr[j]==target){
+//           found=true;
+//         }
+//       }
+//       if(found) System.out.println("Elemrnt is found");
+//       else System.out.println("not found");
+//   }
+
+//   public static void print(int[] arr) {
+//     System.out.println("A element in arr: ");
+//     for (int i = 0; i < arr.length; i++) {
+//       System.out.print(arr[i] + " ");
+//     }
+//     System.out.println();
+//   }
+// }
+
+// --------------------sum of pair-------------------
+
+// public class Practice {
+
+//   public static void main(String[] args) {
+//     int[] arr = { 1, 5, 8, -3, 2 };
+//     int target = 9;
+//     for (int i = 0; i < arr.length; i++) {
+//       for (int j = i+1; j < arr.length; j++) {
+     
+//         if(    arr[i] + arr[j] ==target){
+//            System.out.println("found pair "+i+" And "+j);
+//         }
+//         System.out.println("not found");
+//       }
+//     }
+    
+//   }
+// }
+
+// -----------------------------Scond max ------------------------
 public class Practice {
 
   public static void main(String[] args) {
-    Scanner inp = new Scanner(System.in);
-
-    System.out.println("Enter a size of element: ");
-    int n = inp.nextInt();
-
-    int[] arr= new int[n];
-
-    System.out.println("Enter a element in arr");
+    int[] arr={1,5,8,-3};
+    int max = 0;
+    int smax = 0;
     for(int i =0;i<arr.length;i++){
-        arr[i]=inp.nextInt();
-    }
-   print(arr);
-
-     System.out.print("Enter Trarget num: ");
-    int target=inp.nextInt();
-      boolean found = false;
-      for(int j=0;j<arr.length;j++ ){
-        if(arr[j]==target){
-          found=true;
-        }
+      if(max<arr[i]){
+        smax=max;
+        max=arr[i];
       }
-      if(found) System.out.println("Elemrnt is found");
-      else System.out.println("not found");
-  }
-
-  public static void print(int[] arr) {
-    System.out.println("A element in arr: ");
-    for (int i = 0; i < arr.length; i++) {
-      System.out.print(arr[i] + " ");
     }
-    System.out.println();
+    System.out.println("Second max: "+smax);
   }
 }
