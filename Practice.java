@@ -868,7 +868,7 @@
 
 //   public static void main(String[] args) {
 //     Scanner inp = new Scanner(System.in);
-    
+
 //     System.out.print("Enter a size: ");
 //     int n = inp.nextInt();
 //     int arr[]=new int[n];
@@ -893,40 +893,81 @@
 
 // -------------------mulbyeevn add by odd---------------
 
+// import java.util.Scanner;
+
+// public class Practice {
+
+//   public static void main(String[] args) {
+//     Scanner inp = new Scanner(System.in);
+//     System.out.println("Enter a size of arr");
+//     int n =inp.nextInt();
+
+//     int arr[]= new int[n];
+//     System.out.println("Enter a elemt: ");
+//     for(int i = 0;i<arr.length;i++){
+//       arr[i]=inp.nextInt();
+//     }
+//     print(arr);
+//     evnodd(arr);
+//     System.out.println("After a evnodd opration");
+//     print(arr);
+//   }
+//   public static void print(int[] arr){
+//     for(int j = 0;j<arr.length;j++){
+//       System.out.print(arr[j]+" ");
+//     }
+//     System.out.println();
+//   }
+
+//   public static void evnodd(int[] arr){
+//     for(int i = 0;i<arr.length;i++){
+//       if(i%2==0){
+//         arr[i]=arr[i]*2;
+//       }
+//       else{
+//         arr[i]=arr[i]+10;
+//       }
+//     }
+//     System.out.println();
+//   }
+// }
+
+// --------------------lenear search--------------
+
 import java.util.Scanner;
 
 public class Practice {
 
   public static void main(String[] args) {
     Scanner inp = new Scanner(System.in);
-    System.out.println("Enter a size of arr");
-    int n =inp.nextInt();
 
-    int arr[]= new int[n];
-    System.out.println("Enter a elemt: ");
-    for(int i = 0;i<n;i++){
-      arr[i]=inp.nextInt();
+    System.out.println("Enter a size of element: ");
+    int n = inp.nextInt();
+
+    int[] arr= new int[n];
+
+    System.out.println("Enter a element in arr");
+    for(int i =0;i<arr.length;i++){
+        arr[i]=inp.nextInt();
     }
-    print(arr);
-    evnodd(arr);
-    System.out.println("After a evnodd opration");
-    print(arr);
-  }
-  public static void print(int[] arr){
-    for(int j = 0;j<arr.length;j++){
-      System.out.print(arr[j]+" ");
-    }
-    System.out.println();
+   print(arr);
+
+     System.out.print("Enter Trarget num: ");
+    int target=inp.nextInt();
+      boolean found = false;
+      for(int j=0;j<arr.length;j++ ){
+        if(arr[j]==target){
+          found=true;
+        }
+      }
+      if(found) System.out.println("Elemrnt is found");
+      else System.out.println("not found");
   }
 
-  public static void evnodd(int[] arr){
-    for(int i = 0;i<arr.length;i++){
-      if(i%2==0){
-        arr[i]=arr[i]*2;
-      }
-      else{
-        arr[i]=arr[i]+10;
-      }
+  public static void print(int[] arr) {
+    System.out.println("A element in arr: ");
+    for (int i = 0; i < arr.length; i++) {
+      System.out.print(arr[i] + " ");
     }
     System.out.println();
   }
