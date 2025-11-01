@@ -1003,7 +1003,7 @@ public class Practice {
     for(int i =0;i<arr.length;i++){
       if(max<arr[i]){
         smax=max;
-        max=arr[i];
+        max=arr[i]; 
       }
       else if (arr[i] > smax && arr[i] != max) {
         smax = arr[i];
