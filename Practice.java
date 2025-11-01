@@ -994,21 +994,77 @@
 // }
 
 // -----------------------------Scond max ------------------------
+// public class Practice {
+
+//   public static void main(String[] args) {
+//     int[] arr={1,5,8,-3,8};
+//     int max = arr[0];
+//     int smax = arr[0];
+//     for(int i =0;i<arr.length;i++){
+//       if(max<arr[i]){
+//         smax=max;
+//         max=arr[i]; 
+//       }
+//       else if (arr[i] > smax && arr[i] != max) {
+//         smax = arr[i];
+//       }
+//     }
+//     System.out.println("Second max: "+smax);
+//   }
+// }
+
+// --------------for second max ------------------
+
+// public  class Practice {
+// public static void main(String[] args) {
+//   int[] arr={10,10,10};
+//   int max = Integer.MIN_VALUE;
+//   int smax= Integer.MIN_VALUE;
+//   for(int i = 0;i<arr.length;i++){
+//     if(arr[i]>max){
+//       max=arr[i];
+//     }
+//   }
+//   for(int  j=0;j<arr.length;j++){
+//     if(arr[j]>max && arr[j]!=max){
+//       smax=arr[j];
+//     }
+//   }
+//   System.out.print(max);
+//   System.out.print(smax);
+// }
+// }
+
+// -------------------------foreach loop -------------------
+// public class Practice {
+
+//   public static void main(String[] args) {
+//     int[] arr={2,5,4,6,7};
+//     // for(int i =0;i<arr.length;i++){
+//     //   System.out.print(i);
+//     // }
+//     for(int elem:arr){
+//       elem*=2;
+//       System.out.print(elem+" ");
+//     }
+//   }
+// }
+
+// ---------------------reversearray-------------------
 public class Practice {
 
   public static void main(String[] args) {
-    int[] arr={1,5,8,-3,8};
-    int max = arr[0];
-    int smax = arr[0];
-    for(int i =0;i<arr.length;i++){
-      if(max<arr[i]){
-        smax=max;
-        max=arr[i]; 
-      }
-      else if (arr[i] > smax && arr[i] != max) {
-        smax = arr[i];
-      }
+    int [] arr = {6,8,1,2,4,9};
+    int k =1;
+    for(int i = 0;i<arr.length/2;i++){
+      int temp = arr[i];
+      arr[i]=arr[arr.length-k];
+      arr[arr.length-k]=temp;
+      k++;
     }
-    System.out.println("Second max: "+smax);
+    System.out.println("A reverse element: ");
+    for(int j=0;j<arr.length;j++){
+      System.out.print(arr[j]+" ");
+    }
   }
 }
