@@ -1051,20 +1051,20 @@
 // }
 
 // ---------------------reversearray-------------------
-public class Practice {
+// public class Practice {
 
-  public static void main(String[] args) {
-    int [] arr = {6,8,1,2,4,9};
-    int k =1;
-    for(int i = 0;i<arr.length/2;i++){
-      int temp = arr[i];
-      arr[i]=arr[arr.length-k];
-      arr[arr.length-k]=temp;
-      k++;
-    }
-    System.out.println("A reverse element: ");
-    for(int j=0;j<arr.length;j++){
-      System.out.print(arr[j]+" ");
-    }
-  }
-}
+//   public static void main(String[] args) {
+//     int [] arr = {6,8,1,2,4,9};
+//     int k =1;
+//     for(int i = 0;i<arr.length/2;i++){
+//       int temp = arr[i];
+//       arr[i]=arr[arr.length-k];
+//       arr[arr.length-k]=temp;
+//       k++;
+//     }
+//     System.out.println("A reverse element: ");
+//     for(int j=0;j<arr.length;j++){
+//       System.out.print(arr[j]+" ");
+//     }
+//   }
+// }
