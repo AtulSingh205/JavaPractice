@@ -1070,17 +1070,17 @@
 // }
 
 // ---------------------rotate an aarray d-------------------
-public class Practice {
+// public class Practice {
 
-    public static void main(String[] args) {
-        int[] arr = {6,8,1,2,4,9,0};
-        int[] brr = new int[arr.length];
-        int d=3;
-        for(int i =0;i<arr.length;i++){
-            brr[i]=arr[d+i];
-        }
-        for(int j =0;j<brr.length;j++){
-        System.out.println(brr[j]);
-        }
-    }
-}
+//     public static void main(String[] args) {
+//         int[] arr = {6,8,1,2,4,9,0};
+//         int[] brr = new int[arr.length];
+//         int d=3;
+//         for(int i =0;i<arr.length;i++){
+//             brr[i]=arr[d+i];
+//         }
+//         for(int j =0;j<brr.length;j++){
+//         System.out.println(brr[j]);
+//         }
+//     }
+// }
