@@ -982,14 +982,14 @@
 //     int target = 9;
 //     for (int i = 0; i < arr.length; i++) {
 //       for (int j = i+1; j < arr.length; j++) {
-     
+
 //         if(    arr[i] + arr[j] ==target){
 //            System.out.println("found pair "+i+" And "+j);
 //         }
 //         System.out.println("not found");
 //       }
 //     }
-    
+
 //   }
 // }
 
@@ -1085,17 +1085,52 @@
 //     }
 // }
 
+// public class Practice {
+
+//     public static void main(String[] args) {
+//         int[] arr= {1,2,3,4,5};
+//         int[] brr ;
+//         brr = new int[3];
+//         int d=2;
+//         for(int i =0;i<arr.length;i++){
+//             brr[i]=arr[d+i];
+//         }
+//         for(int j =0;j<brr.length;j++){
+//             System.out.print(brr[j]);
+//         }
+//     }
+// }
+
+// --------------------------reverse d -----------------
+
+import java.util.Scanner;
+
 public class Practice {
 
     public static void main(String[] args) {
-        int[] arr= {1,2,3,4,5};
-        int[] brr;
-        int d=2;
-        for(int i =0;i<arr.length;i++){
-            brr[i]=arr[d+i];
+        Scanner inp = new Scanner(System.in);
+        System.out.print("Enter n number:");
+        int n = inp.nextInt();
+        int[] arr = new int[n];
+        System.out.print("Etner a arry: ");
+        for (int i = 0; i < n; i++) {
+            arr[i] = inp.nextInt();
         }
-        for(int j =0;j<arr.length;j++){
-            System.out.print(brr[j]);
-        }
+        System.out.print("Enter a d :");
+        int d = inp.nextInt();
+        int m = arr.length;
+        d %= m;
+        reverse(arr, 0, d - 1);
+
     }
+      
+       void reverse(int[] arr,int i ,int j ){
+             while (i<j) {
+                int temp = arr[i];
+                arr[i]=arr[j];
+                arr[j]=temp;
+                i++;
+                j++;
+             }
+        }
 }
