@@ -1103,3 +1103,28 @@
 
 // --------------------------reverse d -----------------
 
+import java.util.Scanner;
+
+public class  Practice{
+    public static void main(String[] args) {
+        Scanner inp = new Scanner(System.in);
+
+        System.out.println("Emnte n: ");
+        int n ;
+        int[] arr = new int[n];
+        System.out.println("Enter a arr "+arr.length+": ");
+        for(int i = 0;i<arr.length;i++){
+            arr[i]=inp.nextInt();
+        }
+        System.out.println("Enter a d: ");
+        int d = inp.nextInt();
+
+    }
+    static void revers(int[] arr,int i, int j){
+        int temp = arr[i];
+        arr[i]=arr[j];
+        arr[j]=temp;
+        i++;
+        j--;
+    }
+}
