@@ -1110,7 +1110,7 @@ public class  Practice{
         Scanner inp = new Scanner(System.in);
 
         System.out.println("Emnte n: ");
-        int n ;
+        int n =inp.nextInt() ;
         int[] arr = new int[n];
         System.out.println("Enter a arr "+arr.length+": ");
         for(int i = 0;i<arr.length;i++){
@@ -1118,6 +1118,14 @@ public class  Practice{
         }
         System.out.println("Enter a d: ");
         int d = inp.nextInt();
+        d%=n;
+        revers(arr, 0, d-1);
+        revers(arr, 2, n-1);
+        revers(arr, 0, 4);
+
+        for (int i : arr) {
+            System.out.println(i);
+        }
 
     }
     static void revers(int[] arr,int i, int j){
