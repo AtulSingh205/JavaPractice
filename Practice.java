@@ -1103,38 +1103,63 @@
 
 // --------------------------reverse d -----------------
 
-import java.util.Scanner;
+// import java.util.Scanner;
 
-public class  Practice{
-    public static void main(String[] args) {
-        Scanner inp = new Scanner(System.in);
+// public class  Practice{
+//     public static void main(String[] args) {
+//         Scanner inp = new Scanner(System.in);
 
-        System.out.println("Emnte n: ");
-        int n =inp.nextInt() ;
-        int[] arr = new int[n];
-        System.out.println("Enter a arr "+arr.length+": ");
-        for(int i = 0;i<arr.length;i++){
-            arr[i]=inp.nextInt();
-        }
-        System.out.println("Enter a d: ");
-        int d = inp.nextInt();
-        d%=n;
-        revers(arr, 0, d-1);
-        revers(arr, d, n-1);
-        revers(arr, 0, n-1);
+//         System.out.println("Emnte n: ");
+//         int n =inp.nextInt() ;
+//         int[] arr = new int[n];
+//         System.out.println("Enter a arr "+arr.length+": ");
+//         for(int i = 0;i<arr.length;i++){
+//             arr[i]=inp.nextInt();
+//         }
+//         System.out.println("Enter a d: ");
+//         int d = inp.nextInt();
+//         d%=n;
+//         revers(arr, 0, d-1);
+//         revers(arr, d, n-1);
+//         revers(arr, 0, n-1);
 
-        for (int i : arr) {
-            System.out.print(i+" ");
-        }
+//         for (int i : arr) {
+//             System.out.print(i+" ");
+//         }
 
-    }
-    static void revers(int[] arr,int i, int j){
-        while(i<j){
-        int temp = arr[i];
-        arr[i]=arr[j];
-        arr[j]=temp;
-        i++;
-        j--;
-        }
-    }
-}
+//     }
+//     static void revers(int[] arr,int i, int j){
+//         while(i<j){
+//         int temp = arr[i];
+//         arr[i]=arr[j];
+//         arr[j]=temp;
+//         i++;
+//         j--;
+//         }
+//     }
+// }
+
+// ------------find missing one------------------
+
+// import java.util.Scanner;
+
+// public class Practice {
+
+//     public static void main(String[] args) {
+//         Scanner inp = new Scanner(System.in)
+//         System.out.print("Enter n : ");
+//         int n =inp.nextInt();
+
+//         int[] arr = new int[n];
+//         int cnt=0;
+//         for (int i =0;i<arr.length;i++){
+//          for(int j =0;j<arr.length;j++){
+//             if(arr[i]==arr[j]){
+//                 break;
+//             }
+//                   }
+              
+            
+//             }
+//         }
+// }
