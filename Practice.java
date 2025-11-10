@@ -1120,19 +1120,21 @@ public class  Practice{
         int d = inp.nextInt();
         d%=n;
         revers(arr, 0, d-1);
-        revers(arr, 2, n-1);
-        revers(arr, 0, 4);
+        revers(arr, d, n-1);
+        revers(arr, 0, n-1);
 
         for (int i : arr) {
-            System.out.println(i);
+            System.out.print(i+" ");
         }
 
     }
     static void revers(int[] arr,int i, int j){
+        while(i<j){
         int temp = arr[i];
         arr[i]=arr[j];
         arr[j]=temp;
         i++;
         j--;
+        }
     }
 }
