@@ -1141,25 +1141,25 @@
 
 // ------------find missing one------------------
 
-// import java.util.Scanner;
+import java.util.Scanner;
 
-// public class Practice {
+public class Practice {
 
-//     public static void main(String[] args) {
-//         Scanner inp = new Scanner(System.in)
-//         System.out.print("Enter n : ");
-//         int n =inp.nextInt();
+    public static void main(String[] args) {
+        Scanner inp = new Scanner(System.in)
+        System.out.print("Enter n : ");
+        int n =inp.nextInt();
 
-//         int[] arr = new int[n];
-//         int cnt=0;
-//         for (int i =0;i<arr.length;i++){
-//          for(int j =0;j<arr.length;j++){
-//             if(arr[i]==arr[j]){
-//                 break;
-//             }
-//                   }
+        int[] arr = new int[n];
+        int cnt=0;
+        for (int i =0;i<arr.length;i++){
+         for(int j =0;j<arr.length;j++){
+            if(arr[i]==arr[j]){
+                break;
+            }
+                  }
               
             
-//             }
-//         }
-// }
+            }
+        }
+}
