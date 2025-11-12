@@ -1151,7 +1151,7 @@ public class Practice {
         int n =inp.nextInt();
 
         int[] arr = new int[n];
-        int cnt=0;
+    
         for (int i =0;i<arr.length;i++){
          for(int j =0;j<arr.length;j++){
             if(arr[i]==arr[j]){
