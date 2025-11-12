@@ -1146,7 +1146,7 @@ import java.util.Scanner;
 public class Practice {
 
     public static void main(String[] args) {
-        Scanner inp = new Scanner(System.in)
+        Scanner inp = new Scanner(System.in);
         System.out.print("Enter n : ");
         int n =inp.nextInt();
 
