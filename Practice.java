@@ -1159,7 +1159,7 @@ public class Practice {
                 break;
                 }
             else{
-                sout(arr[j])
+                sout(arr[j]);
             }
             }
             }
