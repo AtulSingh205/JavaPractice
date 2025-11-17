@@ -1169,30 +1169,30 @@
 
 // ----------------------misss in array--------
 
-import java.util.Scanner;
+// import java.util.Scanner;
 
-public class Practice {
+// public class Practice {
 
-    public static void main(String[] args) {
-        Scanner inp = new Scanner(System.in);
-        System.out.println("Enter a length : ");
-        int length = inp.nextInt();
+//     public static void main(String[] args) {
+//         Scanner inp = new Scanner(System.in);
+//         System.out.println("Enter a length : ");
+//         int length = inp.nextInt();
         
-        // int[] arr = new int[length];
-        // System.out.print("Enter a element: ");
-        // for(int i =0;i<length;i++){
-        //    arr[i] = inp.nextInt();
-        // }
+//         // int[] arr = new int[length];
+//         // System.out.print("Enter a element: ");
+//         // for(int i =0;i<length;i++){
+//         //    arr[i] = inp.nextInt();
+//         // }
 
-        int[] arr = {1,3,4,5};
+//         int[] arr = {1,3,4,5};
 
-         int cal = length*(length+1)/2;
-         int sum =0 ;
-         for(int i = 0;i<arr.length;i++){
-            sum+= arr[i];
-         }
-         int findmiss = cal - sum;
-         System.out.println(findmiss);
-    }
-}
+//          int cal = length*(length+1)/2;
+//          int sum =0 ;
+//          for(int i = 0;i<arr.length;i++){
+//             sum+= arr[i];
+//          }
+//          int findmiss = cal - sum;
+//          System.out.println(findmiss);
+//     }
+// }
 
