@@ -1250,22 +1250,57 @@
 // }
 
 // ----------------------swap array-------------
-public class sawp {
+// public class sawp {
 
-     public static void main(String[] args) {
-        int[] arr={1,2,3,4,5};
-        int i = 0;
-        int j = 1;
-        while(j<arr.length){
-                int temp = arr[i];
-                arr[i]=arr[j];
-                arr[j]=temp;
-                i+=2;
-                j+=2;
-            }
-        for(int k=0;k<arr.length;k++){
-            System.out.print(arr[k]+" ");
+//      public static void main(String[] args) {
+//         int[] arr={1,2,3,4,5};
+//         int i = 0;
+//         int j = 1;
+//         while(j<arr.length){
+//                 int temp = arr[i];
+//                 arr[i]=arr[j];
+//                 arr[j]=temp;
+//                 i+=2;
+//                 j+=2;
+//             }
+//         for(int k=0;k<arr.length;k++){
+//             System.out.print(arr[k]+" ");
+//         }
+//      }
+
+// }
+
+// ---------------Array List---------------
+
+import java.util.ArrayList;
+
+public class Arrlist{
+    int[] Convert(ArrayList<Integer> arr){
+        int[] Array = new int[arr.size()];
+        for(int i = 0;i<arr.size();i++){
+            Array[i] = arr.get(i);
         }
-     }
-}
+        return Array;
+    }
+     void  display(int[] arr){
+        System.out.println("Output: ");
+        for(int i = 0;i<arr.length;i++){
+            System.out.print(arr[i]+" ");
+        }
+    }
+    public static void main(String[] args) {
+        ArrayList<Integer> arr = new ArrayList<>();
+        arr.add(10);
+        arr.add(20);
+        arr.add(30);
+        arr.add(40);
+      System.out.println(arr);
+      arr.set(2, 25);
+      System.out.println(arr);
+    Arrlist obj = new Arrlist();
 
+    int[] array = obj.Convert(arr);
+    obj.display(array);
+      
+    }
+}
