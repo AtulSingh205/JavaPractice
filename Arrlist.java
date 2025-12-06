@@ -1301,6 +1301,5 @@ public class Arrlist{
 
     int[] array = obj.Convert(arr);
     obj.display(array);
-      
     }
 }
