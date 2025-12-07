@@ -1300,8 +1300,7 @@ public class Arrlist{
     Arrlist obj = new Arrlist();
 
     int[] array = obj.Convert(arr);
-    
-    obj.display(array);
 
+    obj.display(array);
     }
 }
