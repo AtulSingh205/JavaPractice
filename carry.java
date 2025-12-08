@@ -1272,35 +1272,77 @@
 
 // ---------------Array List---------------
 
+// import java.util.ArrayList;
+
+// public class Arrlist{
+//     int[] Convert(ArrayList<Integer> arr){
+//         int[] Array = new int[arr.size()];
+//         for(int i = 0;i<arr.size();i++){
+//             Array[i] = arr.get(i);
+//         }
+//         return Array;
+//     }
+//      void  display(int[] arr){
+//         System.out.println("Output: ");
+//         for(int i = 0;i<arr.length;i++){
+//             System.out.print(arr[i]+" ");
+//         }
+//     }
+//     public static void main(String[] args) {
+//         ArrayList<Integer> arr = new ArrayList<>();
+//         arr.add(10);
+//         arr.add(20);
+//         arr.add(30);
+//         arr.add(40);
+//       System.out.println(arr);
+//       arr.set(2, 25);
+//       System.out.println(arr);
+//     Arrlist obj = new Arrlist();
+
+//     int[] array = obj.Convert(arr);
+
+//     obj.display(array);
+//     }
+// }
+
+
+// -----------array+carray------------
+
 import java.util.ArrayList;
+import java.util.Scanner;
 
-public class Arrlist{
-    int[] Convert(ArrayList<Integer> arr){
-        int[] Array = new int[arr.size()];
-        for(int i = 0;i<arr.size();i++){
-            Array[i] = arr.get(i);
+public class carry {
+
+    void carray(ArrayList<Integer> arr ,int n){
+        int carray=1;
+        for(int i = n-1;i>=0;i--){
+               if(arr.get(i)+carray<=9){
+                arr.set(i,arr.get(i)+carray);
+                carray=0;
+               }
+               else{
+                arr.set(i,0);
+                carray=1;
+               }
         }
-        return Array;
     }
-     void  display(int[] arr){
-        System.out.println("Output: ");
-        for(int i = 0;i<arr.length;i++){
-            System.out.print(arr[i]+" ");
-        }
-    }
+
     public static void main(String[] args) {
-        ArrayList<Integer> arr = new ArrayList<>();
-        arr.add(10);
-        arr.add(20);
-        arr.add(30);
-        arr.add(40);
-      System.out.println(arr);
-      arr.set(2, 25);
-      System.out.println(arr);
-    Arrlist obj = new Arrlist();
-
-    int[] array = obj.Convert(arr);
-
-    obj.display(array);
+        ArrayList<Integer> ans = new ArrayList<>();
+       Scanner inp = new Scanner(System.in);
+       System.out.println("Enter a size of  Arraay: ");
+       int n = inp.nextInt();
+       for(int i = 0;i <n;i++){
+        System.out.print("Enter a Element: ");
+        int x = inp.nextInt();
+        ans.add(x);
+       }
+       System.out.println(ans);
+       carry obj =new carry();
+      obj.carray(ans,n);
+      System.out.println(ans);
     }
+    
+
+
 }
