@@ -1342,7 +1342,4 @@ public class carry {
       obj.carray(ans,n);
       System.out.println(ans);
     }
-    
-
-
 }
