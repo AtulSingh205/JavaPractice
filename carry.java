@@ -1341,7 +1341,5 @@ public class carry {
        carry obj =new carry();
       obj.carray(ans,n);
       System.out.println(ans);
-
-      
     }
 }
