@@ -1340,6 +1340,8 @@ public class carry {
        System.out.println(ans);
        carry obj =new carry();
       obj.carray(ans,n);
+
+      
       System.out.println(ans);
     }
 }
