@@ -1308,39 +1308,126 @@
 
 // -----------array+carray------------
 
+// import java.util.ArrayList;
+// import java.util.Scanner;
+
+// public class carry {
+
+//     void carray(ArrayList<Integer> arr ,int n){
+//         int carray=1;
+//         for(int i = n-1;i>=0;i--){
+//                if(arr.get(i)+carray<=9){
+//                 arr.set(i,arr.get(i)+carray);
+//                 carray=0;
+//                }
+//                else{
+//                 arr.set(i,0);
+//                 carray=1;
+//                }
+//         }
+//     }
+
+//     public static void main(String[] args) {
+//         ArrayList<Integer> ans = new ArrayList<>();
+//        Scanner inp = new Scanner(System.in);
+//        System.out.println("Enter a size of  Arraay: ");
+//        int n = inp.nextInt();
+//        for(int i = 0;i <n;i++){
+//         System.out.print("Enter a Element: ");
+//         int x = inp.nextInt();
+//         ans.add(x);
+//        }
+//        System.out.println(ans);
+//        carry obj =new carry();
+//       obj.carray(ans,n);
+//       System.out.println(ans);
+      
+//     }
+// }
+
+// ---------------------Array+Caarry-----------------------
+
+// import java.util.ArrayList;
+// import java.util.Scanner;
+
+// public class carray{
+
+
+//    void Addone(ArrayList<Integer> arr,int n ){
+//             int carry = 1; 
+//               for(int j =n-1;j>=0;j--){
+               
+//                if(arr.get(j)+carry<=9){
+//                     arr.set(j, arr.get(j)+carry);
+//                     carry =0;
+//                }
+//                else{
+//                 arr.set(j,0);
+//                 carry=1;
+//                }
+//               }
+//      }
+   
+//     public static void main(String[] args) {
+//         ArrayList<Integer> arr = new ArrayList<>();
+//         //user se criteriya lena hai
+//         System.out.println("Enter a Size of Arraay: ");
+//         Scanner inp = new Scanner(System.in);
+//         int Size=inp.nextInt();
+        
+//         //Ab For se Use se entry krwayenge 
+//         System.out.println("Enter  user: ");
+//         for(int i = 0;i<Size;i++){
+//             int x = inp.nextInt();
+//            arr.add(x);
+//         }
+//         carray obj = new carray();
+//         obj.Addone(arr, Size);
+//         System.out.println(arr);
+        
+//     }
+// }
+
+// ---------------------------Add 2 Array---------------------
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class carry {
+ 
 
-    void carray(ArrayList<Integer> arr ,int n){
-        int carray=1;
-        for(int i = n-1;i>=0;i--){
-               if(arr.get(i)+carray<=9){
-                arr.set(i,arr.get(i)+carray);
-                carray=0;
-               }
-               else{
-                arr.set(i,0);
-                carray=1;
-               }
-        }
-    }
-
+public class carray {
+         
+     void AddtoArr(ArrayList<Integer> brr1 , ArrayList<Integer> brr2 , int n  ){
+        int carry=0;
+         for(int i = n-1;i>=0;i--){
+            int sum = brr1.get(i)+brr2.get(i)+carry;
+            brr1.set(i,sum%10);
+            carry = sum/10;
+         }
+         if(carry>0){
+            brr1.add(0,carry);
+         }
+  }
     public static void main(String[] args) {
-        ArrayList<Integer> ans = new ArrayList<>();
-       Scanner inp = new Scanner(System.in);
-       System.out.println("Enter a size of  Arraay: ");
-       int n = inp.nextInt();
-       for(int i = 0;i <n;i++){
-        System.out.print("Enter a Element: ");
-        int x = inp.nextInt();
-        ans.add(x);
-       }
-       System.out.println(ans);
-       carry obj =new carry();
-      obj.carray(ans,n);
-      System.out.println(ans);
+        ArrayList<Integer> arr1 = new ArrayList<>();
+        ArrayList<Integer> arr2 = new ArrayList<>();
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter a Size of arr: ");
+        int Size = input.nextInt();
+        System.out.println("Enter a Element For Arr1: ");
       
+        for(int i = 0;i<Size;i++){
+            int x = input.nextInt();
+            arr1.add(x);
+        }
+        System.out.println("Enter a Element For Arr2: ");
+        for(int i = 0;i<Size;i++){
+            int x = input.nextInt();
+            arr2.add(x);
+        }
+        carray obj = new carray();
+        obj.AddtoArr(arr1,arr2,Size);
+        System.out.println(arr1);
+         input.close();
     }
 }
