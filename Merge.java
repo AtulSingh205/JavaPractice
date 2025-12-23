@@ -1436,5 +1436,28 @@
 
 
 public class Merge{
+
+    void  merge(int[] a, int[] b,int[] c){
+        int i = 0,j=0,k=0;
+        while(a.length<=c.length&&b.length<=c.length){
+            if(a[i]<=b[j]){
+                c[k++]=b[i++];
+            }
+            else if(b[j]<=a[i]){
+                c[k++]=a[i++];
+            }
+        }
+    }
+    public static void main(String[] args) {
+        int[] arr1 = {2,5,6,9,20};
+        int[] arr2 = {1,3,4,5,7,8};
+        int[] arr3 = {};
+
+        Merge obj = new Merge();
+        obj.merge(arr1, arr2, arr3);
+        for(int i =0;i<=arr1.length+arr2.length;i++){
+            System.out.print(arr3[i]+" ");
+        }
     
+    }
 }
