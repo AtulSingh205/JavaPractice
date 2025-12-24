@@ -1458,6 +1458,5 @@ public class Merge{
         for(int i =0;i<=arr1.length+arr2.length;i++){
             System.out.print(arr3[i]+" ");
         }
-    
     }
 }
