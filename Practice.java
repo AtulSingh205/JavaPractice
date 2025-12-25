@@ -1477,21 +1477,33 @@
 
 // ----------------------calculate Percentage--------------------
 
-import java.util.Scanner;
+// import java.util.Scanner;
 
-public class Calculate{
-    public static void main(String[] args) {
-        Scanner inp = new Scanner(System.in);
+// public class Calculate{
+//     public static void main(String[] args) {
+//         Scanner inp = new Scanner(System.in);
     
-        System.out.print("Enter a Math marks: ");
-        float Math =  inp.nextFloat();
-        System.out.println("Enter a Physics marks: ");
-        Float Physics = inp.nextFloat();
-        System.out.println("Enter a Chemistry Marks:");
-        float Chemistry = inp.nextFloat();
+//         System.out.print("Enter a Math marks: ");
+//         float Math =  inp.nextFloat();
+//         System.out.println("Enter a Physics marks: ");
+//         Float Physics = inp.nextFloat();
+//         System.out.println("Enter a Chemistry Marks:");
+//         float Chemistry = inp.nextFloat();
 
-        float Sum  = Math + Physics +Chemistry;
-        double Percentage = Sum/3;
-        System.out.print("Percentage of Number: "+Percentage);
+//         float Sum  = Math + Physics +Chemistry;
+//         double Percentage = Sum/3;
+//         System.out.print("Percentage of Number: "+Percentage);
+//     }
+// }
+
+// -------------------incremint decreement---------------------
+public class Practice{
+    public static void main(String[] args) {
+        int a = 5;
+        System.out.println(a++);
+        System.out.println(a);
+        System.out.println(++a);
+        System.out.println(a);
+    
     }
 }
