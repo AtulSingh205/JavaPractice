@@ -1463,8 +1463,35 @@
 
 // ----------------------String concept-------------------
 
-public class Practice{
+// import java.util.Scanner;
+
+// public class Practice{
+//     public static void main(String[] args) {
+//         Scanner inp = new Scanner(System.in);
+//         System.out.println("Enter a String: ");
+//         String a = inp.nextLine();
+//         System.out.print(a);
+//     }
+// }
+
+
+// ----------------------calculate Percentage--------------------
+
+import java.util.Scanner;
+
+public class Calculate{
     public static void main(String[] args) {
-        Scanner inp = new Scan
+        Scanner inp = new Scanner(System.in);
+    
+        System.out.print("Enter a Math marks: ");
+        float Math =  inp.nextFloat();
+        System.out.println("Enter a Physics marks: ");
+        Float Physics = inp.nextFloat();
+        System.out.println("Enter a Chemistry Marks:");
+        float Chemistry = inp.nextFloat();
+
+        float Sum  = Math + Physics +Chemistry;
+        double Percentage = Sum/3;
+        System.out.print("Percentage of Number: "+Percentage);
     }
 }
