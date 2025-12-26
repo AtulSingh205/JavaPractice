@@ -1479,31 +1479,46 @@
 
 // import java.util.Scanner;
 
-// public class Calculate{
+// public class Practice{
 //     public static void main(String[] args) {
 //         Scanner inp = new Scanner(System.in);
-    
-//         System.out.print("Enter a Math marks: ");
-//         float Math =  inp.nextFloat();
-//         System.out.println("Enter a Physics marks: ");
-//         Float Physics = inp.nextFloat();
-//         System.out.println("Enter a Chemistry Marks:");
-//         float Chemistry = inp.nextFloat();
+//         System.out.println("Enter a Total_Value: ");
+//         float Total_value  = inp.nextFloat();
+//          float total = 0;
+//         System.out.println("Enter a Physics out of "+Total_value  );
+//          float p = inp.nextFloat();
+//          total +=p;
+//          System.out.println("Enter a Chemistry out of  "+Total_value);
+//           float c = inp.nextFloat();
+//           total +=c;
+//           System.out.println("ENter a Mathmatics out of "+Total_value);
+//           float M = inp.nextFloat();
+//           total +=M;
+          
+//           float Percentage = total*100/(Total_value*3);
 
-//         float Sum  = Math + Physics +Chemistry;
-//         double Percentage = Sum/3;
-//         System.out.print("Percentage of Number: "+Percentage);
+//           System.out.println("Your Percentage is : "+Percentage);
 //     }
 // }
 
 // -------------------incremint decreement---------------------
-public class Practice{
+// public class Practice{
+//     public static void main(String[] args) {
+//         int a = 5;
+//         char b = 'a';
+//         System.out.println(a++);
+//         System.out.println(a);
+//         System.out.println(++a);
+//         System.out.println(a);
+//         System.out.println(++b);
+//     }
+// }
+
+// ----------------------quetion-------------
+
+public class Practice {
     public static void main(String[] args) {
-        int a = 5;
-        System.out.println(a++);
+        float a = 7.0f/4*9/2;
         System.out.println(a);
-        System.out.println(++a);
-        System.out.println(a);
-    
     }
 }
