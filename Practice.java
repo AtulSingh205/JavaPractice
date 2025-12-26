@@ -1516,9 +1516,66 @@
 
 // ----------------------quetion-------------
 
-public class Practice {
-    public static void main(String[] args) {
-        float a = 7.0f/4*9/2;
-        System.out.println(a);
+// public class Practice {
+//     public static void main(String[] args) {
+//         float a = 7.0f/4*9/2;
+//         System.out.println(a);
+//     }
+// }
+
+// --------------------question-Grade------------
+// public class Practice {
+
+//     public static void main(String[] args) {
+//         char grade = 'a';
+
+//         grade = (char)(grade+8);
+//         System.out.println(grade);
+//          grade = (char)(grade-8);
+//         System.out.println(grade);
+//     }
+// }
+
+// --------------------question-----------------
+
+// import java.util.Scanner;
+
+// public class Practice {
+
+//      public static void main(String[] args) {
+//         Scanner inp = new Scanner(System.in);
+//         System.out.println("Enter a V: ");
+//         float V = inp.nextFloat();
+//         System.out.println("Enter a U: ");
+//         float U = inp.nextFloat();
+//         System.out.println("Enter a, a: ");
+//         float a = inp.nextFloat();
+//         System.out.println("Enter a s: ");
+//         float s = inp.nextFloat();
+
+//         float squre  = (V*V)-(U*U);
+//         float multiply = (2*a*s);
+//         float Solution = squre/multiply;
+//         System.out.println(Solution);
+        
+//      }
+// }
+
+// --------------------String Methods----------------------
+
+public class Practice{
+   public static void main(String[] args) {
+       String name = " Atul Singh";
+       System.out.println(name );
+       System.out.println(name.length());
+       System.out.println(name.toLowerCase());
+       System.out.println(name.trim());
+       System.out.println(name.substring(2));
+       System.out.println(name.substring(2, 5));
+       System.out.println(name.replace("t", "bd"));
+       System.out.println(name.startsWith(" "));
+       System.out.println(name.indexOf("t",2));
+       System.out.println(name.lastIndexOf("h"));
+       System.out.println(name.equals(" Atul Singh"));
     }
 }
