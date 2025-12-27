@@ -1151,7 +1151,7 @@
 //         int n =inp.nextInt();
 
 //         int[] arr = new int[n];
-    
+
 //         for (int i =0;i<arr.length;i++){
 //          for(int j =0;j<arr.length;j++){
 //             if{
@@ -1177,7 +1177,7 @@
 //         Scanner inp = new Scanner(System.in);
 //         System.out.println("Enter a length : ");
 //         int length = inp.nextInt();
-        
+
 //         // int[] arr = new int[length];
 //         // System.out.print("Enter a element: ");
 //         // for(int i =0;i<length;i++){
@@ -1196,13 +1196,12 @@
 //     }
 // }
 
-
 // ----------------------segrigate------------
 // public class Segrigate{
 //     public static void main(String[] args) {
 //         int arr[] = {0,1,0,1,0,1};
 //         int countZero =0;
-        
+
 //         for(int i = 0;i<arr.length;i++){
 //             if(arr[i]==0){
 //             countZero++;
@@ -1216,7 +1215,7 @@
 //         for(int i=countZero;i<arr.length;i++){
 //             arr[i]=1;
 //         }
-        
+
 //         System.out.println("After segrigate:");
 //         for(int i = 0;i<arr.length;i++){
 //             System.out.print(arr[i]+" ");
@@ -1305,7 +1304,6 @@
 //     }
 // }
 
-
 // -----------array+carray------------
 
 // import java.util.ArrayList;
@@ -1341,7 +1339,7 @@
 //        carry obj =new carry();
 //       obj.carray(ans,n);
 //       System.out.println(ans);
-      
+
 //     }
 // }
 
@@ -1352,11 +1350,10 @@
 
 // public class carray{
 
-
 //    void Addone(ArrayList<Integer> arr,int n ){
 //             int carry = 1; 
 //               for(int j =n-1;j>=0;j--){
-               
+
 //                if(arr.get(j)+carry<=9){
 //                     arr.set(j, arr.get(j)+carry);
 //                     carry =0;
@@ -1367,14 +1364,14 @@
 //                }
 //               }
 //      }
-   
+
 //     public static void main(String[] args) {
 //         ArrayList<Integer> arr = new ArrayList<>();
 //         //user se criteriya lena hai
 //         System.out.println("Enter a Size of Arraay: ");
 //         Scanner inp = new Scanner(System.in);
 //         int Size=inp.nextInt();
-        
+
 //         //Ab For se Use se entry krwayenge 
 //         System.out.println("Enter  user: ");
 //         for(int i = 0;i<Size;i++){
@@ -1384,7 +1381,7 @@
 //         carray obj = new carray();
 //         obj.Addone(arr, Size);
 //         System.out.println(arr);
-        
+
 //     }
 // }
 
@@ -1393,10 +1390,8 @@
 // import java.util.ArrayList;
 // import java.util.Scanner;
 
- 
-
 // public class carray {
-         
+
 //      void AddtoArr(ArrayList<Integer> brr1 , ArrayList<Integer> brr2 , int n  ){
 //         int carry=0;
 //          for(int i = n-1;i>=0;i--){
@@ -1415,7 +1410,7 @@
 //         System.out.println("Enter a Size of arr: ");
 //         int Size = input.nextInt();
 //         System.out.println("Enter a Element For Arr1: ");
-      
+
 //         for(int i = 0;i<Size;i++){
 //             int x = input.nextInt();
 //             arr1.add(x);
@@ -1433,7 +1428,6 @@
 // }
 
 // ---------------Add Two Merge Sort-------------------
-
 
 // public class Merge{
 
@@ -1474,7 +1468,6 @@
 //     }
 // }
 
-
 // ----------------------calculate Percentage--------------------
 
 // import java.util.Scanner;
@@ -1494,7 +1487,7 @@
 //           System.out.println("ENter a Mathmatics out of "+Total_value);
 //           float M = inp.nextFloat();
 //           total +=M;
-          
+
 //           float Percentage = total*100/(Total_value*3);
 
 //           System.out.println("Your Percentage is : "+Percentage);
@@ -1557,7 +1550,7 @@
 //         float multiply = (2*a*s);
 //         float Solution = squre/multiply;
 //         System.out.println(Solution);
-        
+
 //      }
 // }
 
@@ -1602,18 +1595,110 @@
 
 // --------------------if else----------------------
 
+// import java.util.Scanner;
+
+// public class Practice {
+//   public static void main(String[] args) {
+//     Scanner inp = new Scanner(System.in);
+//     System.out.print("Enter your age: ");
+//     int age = inp.nextInt();
+//     if(age>=18){
+//       System.out.print("You are eligibel for Making DL");
+//     }
+//     else{
+//       System.out.println("You are not eligibel fo Making a Dl");
+//     }
+//   }
+// }
+
+// -------------------------true or flase --------------------
+
+// public class Practice {
+//   public static void main(String[] args) {
+//       boolean a = true;
+//       boolean b = false;
+//       if(a || b){
+//          System.out.print("both are Same");
+//       }
+//       else{
+//          System.out.println("There is not same Value");
+//       }
+//   }
+// }
+
+// -----------------------Switch case----------------
+
+// import java.util.Scanner;
+
+// public class Practice {
+//     public static void main(String[] args) {
+//         Scanner inp = new Scanner(System.in);
+//         System.out.print("Enter a Date:");
+//         int a = inp.nextInt();
+
+//         switch (a) {
+//             case 1:
+//                 System.out.println("Sunday");
+//                 break;
+//             case 2:
+//                 System.out.println("Monday");
+//                 break;
+//             case 3:
+//                 System.out.println("Tuesday");
+//                 break;
+//             case 4:
+//                 System.out.println("WednesDay");
+//                 break;
+//             case 5:
+//                 System.out.println("Friday");
+//                 break;
+//             case 6:
+//                 System.out.println("Saturday");
+//                 break;
+//             default:
+//                 System.out.println("Please enter 1 to 7 date");
+//                 break;
+//         }
+//         System.out.println("Thank you For Use My Code");
+
+//     }
+// }
+
+// ----------------------------CBSE Percentage Calculator-------------------
+
 import java.util.Scanner;
 
-public class Practice {
-  public static void main(String[] args) {
-    Scanner inp = new Scanner(System.in);
-    System.out.print("Enter your age: ");
-    int age = inp.nextInt();
-    if(age>=18){
-      System.out.print("You are eligibel for Making DL");
+public class calculator{
+
+    void checkGrade(float percnt){
+        if(percnt>=90) System.out.print("A grade");
+        else if(percnt>=80 && percnt<90) System.out.println("B grade");
+        else if(percnt>=65 && percnt<80) System.out.println("C grade");
+        else if(percnt>=45 && percnt<65) System.out.println("D grade");
+        else System.out.println("Please try again ");
     }
-    else{
-      System.out.println("You are not eligibel fo Making a Dl");
+    public static void main(String[] args) {
+       Scanner inp = new Scanner(System.in);
+       System.out.print("Max Marks of Each subject is : ");
+       int Max_Marks = inp.nextInt();
+       int numofsub = 0;
+       float total = 0;
+       System.out.print("Enter a  Math marks: ");
+       total += inp.nextFloat();
+       numofsub+=1;
+       System.out.print("Enter a Physics Marks: ");
+       total +=inp.nextFloat();
+       numofsub+=1;
+       System.out.print("Enter a Chemistry Marks: ");
+       total +=inp.nextFloat();
+       numofsub+=1;
+       System.out.print("Enter a English marks: ");
+       total +=inp.nextFloat();
+       numofsub+=1;
+
+       float Percentage = total*100/(Max_Marks*numofsub);
+       System.out.println(Percentage);
+       calculator obj = new calculator();
+       obj.checkGrade(Percentage);
     }
-  }
 }
