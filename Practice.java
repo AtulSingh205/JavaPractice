@@ -1563,19 +1563,57 @@
 
 // --------------------String Methods----------------------
 
-public class Practice{
-   public static void main(String[] args) {
-       String name = " Atul Singh";
-       System.out.println(name );
-       System.out.println(name.length());
-       System.out.println(name.toLowerCase());
-       System.out.println(name.trim());
-       System.out.println(name.substring(2));
-       System.out.println(name.substring(2, 5));
-       System.out.println(name.replace("t", "bd"));
-       System.out.println(name.startsWith(" "));
-       System.out.println(name.indexOf("t",2));
-       System.out.println(name.lastIndexOf("h"));
-       System.out.println(name.equals(" Atul Singh"));
+// public class Practice{
+//    public static void main(String[] args) {
+//        String name = " Atul Singh";
+//        System.out.println(name );
+//        System.out.println(name.length());
+//        System.out.println(name.toLowerCase());
+//        System.out.println(name.trim());
+//        System.out.println(name.substring(2));
+//        System.out.println(name.substring(2, 5));
+//        System.out.println(name.replace("t", "bd"));
+//        System.out.println(name.startsWith(" "));
+//        System.out.println(name.indexOf("t",2));
+//        System.out.println(name.lastIndexOf("h"));
+//        System.out.println(name.equals(" Atul Singh"));
+//     }
+// }
+
+// -------------------------Escapesequence--------------------
+
+// public class Practice {
+
+//      public static void main(String[] args) {
+//         System.out.println("Hii My self Atul Sing recently I completed My gradution  in \n BCA");
+//      }
+// }
+
+// ---------------------replace-------------------
+
+// import java.util.Scanner;
+
+// public class Practice{
+//    public static void main(String[] args) {
+//       String name = "Dear name  Thanks A lot all They people which contribute their effort in my Life ";
+//       System.out.println(name.replace("name", "All my Family"));
+//    }
+// }
+
+// --------------------if else----------------------
+
+import java.util.Scanner;
+
+public class Practice {
+  public static void main(String[] args) {
+    Scanner inp = new Scanner(System.in);
+    System.out.print("Enter your age: ");
+    int age = inp.nextInt();
+    if(age>=18){
+      System.out.print("You are eligibel for Making DL");
     }
+    else{
+      System.out.println("You are not eligibel fo Making a Dl");
+    }
+  }
 }
