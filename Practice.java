@@ -1705,25 +1705,41 @@
 
 // --------------------------RockPapperSessior Game----------------------
 
-import java.util.Random;
-import java.util.Scanner;
+// import java.util.Random;
+// import java.util.Scanner;
 
-public class Game{
+// public class Game{
+//     public static void main(String[] args) {
+//         Scanner inp = new Scanner(System.in);
+//         Random random = new Random();
+//         System.out.println("1=Rock");
+//         System.out.println("2=Paper");
+//         System.out.println("3=Siseor");
+
+//         System.out.print("Enter a Numb out of 3: ");
+//         int User = inp.nextInt();
+//         int computer = random.nextInt(3)+1;
+//          System.out.println("Computer Choose: "+computer);
+//         if(User==computer) System.out.print("Match Drow");
+//         else if(User==1 && computer==3) System.out.println("User  Win the game rock beats Scisor");
+//         else if(User==2 && computer==1) System.out.println("User  win the game Paper beats Rock");
+//         else if(User==3 && computer==2) System.out.println("User  win the game Scisor beats Paper ");
+//         else System.out.println("Computer won the Match");
+//     }
+// }
+
+// --------------------loop------------------
+
+public class Practice{
     public static void main(String[] args) {
-        Scanner inp = new Scanner(System.in);
-        Random random = new Random();
-        System.out.println("1=Rock");
-        System.out.println("2=Paper");
-        System.out.println("3=Siseor");
-
-        System.out.print("Enter a Numb out of 3: ");
-        int User = inp.nextInt();
-        int computer = random.nextInt(3)+1;
-         System.out.println("Computer Choose: "+computer);
-        if(User==computer) System.out.print("Match Drow");
-        else if(User==1 && computer==3) System.out.println("User  Win the game rock beats Scisor");
-        else if(User==2 && computer==1) System.out.println("User  win the game Paper beats Rock");
-        else if(User==3 && computer==2) System.out.println("User  win the game Scisor beats Paper ");
-        else System.out.println("Computer won the Match");
+       System.out.println("Print Even Number: ");
+        for(int i = 1;i<5;i++){
+            System.out.println(2*i);
+        }
+           System.out.println("Print odd Number: ");
+        for(int j = 1; j<5;j++){
+         
+            System.out.println(2*j+1);
+        }
     }
 }
