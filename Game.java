@@ -1666,39 +1666,64 @@
 
 // ----------------------------CBSE Percentage Calculator-------------------
 
+// import java.util.Scanner;
+
+// public class calculator{
+
+//     void checkGrade(float percnt){
+//         if(percnt>=90) System.out.print("A grade");
+//         else if(percnt>=80 && percnt<90) System.out.println("B grade");
+//         else if(percnt>=65 && percnt<80) System.out.println("C grade");
+//         else if(percnt>=45 && percnt<65) System.out.println("D grade");
+//         else System.out.println("Please try again ");
+//     }
+//     public static void main(String[] args) {
+//        Scanner inp = new Scanner(System.in);
+//        System.out.print("Max Marks of Each subject is : ");
+//        int Max_Marks = inp.nextInt();
+//        int numofsub = 0;
+//        float total = 0;
+//        System.out.print("Enter a  Math marks: ");
+//        total += inp.nextFloat();
+//        numofsub+=1;
+//        System.out.print("Enter a Physics Marks: ");
+//        total +=inp.nextFloat();
+//        numofsub+=1;
+//        System.out.print("Enter a Chemistry Marks: ");
+//        total +=inp.nextFloat();
+//        numofsub+=1;
+//        System.out.print("Enter a English marks: ");
+//        total +=inp.nextFloat();
+//        numofsub+=1;
+
+//        float Percentage = total*100/(Max_Marks*numofsub);
+//        System.out.println(Percentage);
+//        calculator obj = new calculator();
+//        obj.checkGrade(Percentage);
+//     }
+// }
+
+// --------------------------RockPapperSessior Game----------------------
+
+import java.util.Random;
 import java.util.Scanner;
 
-public class calculator{
-
-    void checkGrade(float percnt){
-        if(percnt>=90) System.out.print("A grade");
-        else if(percnt>=80 && percnt<90) System.out.println("B grade");
-        else if(percnt>=65 && percnt<80) System.out.println("C grade");
-        else if(percnt>=45 && percnt<65) System.out.println("D grade");
-        else System.out.println("Please try again ");
-    }
+public class Game{
     public static void main(String[] args) {
-       Scanner inp = new Scanner(System.in);
-       System.out.print("Max Marks of Each subject is : ");
-       int Max_Marks = inp.nextInt();
-       int numofsub = 0;
-       float total = 0;
-       System.out.print("Enter a  Math marks: ");
-       total += inp.nextFloat();
-       numofsub+=1;
-       System.out.print("Enter a Physics Marks: ");
-       total +=inp.nextFloat();
-       numofsub+=1;
-       System.out.print("Enter a Chemistry Marks: ");
-       total +=inp.nextFloat();
-       numofsub+=1;
-       System.out.print("Enter a English marks: ");
-       total +=inp.nextFloat();
-       numofsub+=1;
+        Scanner inp = new Scanner(System.in);
+        Random random = new Random();
+        System.out.println("1=Rock");
+        System.out.println("2=Paper");
+        System.out.println("3=Siseor");
 
-       float Percentage = total*100/(Max_Marks*numofsub);
-       System.out.println(Percentage);
-       calculator obj = new calculator();
-       obj.checkGrade(Percentage);
+        System.out.print("Enter a Numb out of 3: ");
+        int User = inp.nextInt();
+        int computer = random.nextInt(3)+1;
+         System.out.println("Computer Choose: "+computer);
+        if(User==computer) System.out.print("Match Drow");
+        else if(User==1 && computer==3) System.out.println("User  Win the game rock beats Scisor");
+        else if(User==2 && computer==1) System.out.println("User  win the game Paper beats Rock");
+        else if(User==3 && computer==2) System.out.println("User  win the game Scisor beats Paper ");
+        else System.out.println("Computer won the Match");
     }
 }
