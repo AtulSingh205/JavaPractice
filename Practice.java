@@ -1730,16 +1730,62 @@
 
 // --------------------loop------------------
 
-public class Practice{
-    public static void main(String[] args) {
-       System.out.println("Print Even Number: ");
-        for(int i = 1;i<5;i++){
-            System.out.println(2*i);
-        }
-           System.out.println("Print odd Number: ");
-        for(int j = 1; j<5;j++){
+// public class Practice{
+//     public static void main(String[] args) {
+//        System.out.println("Print Even Number: ");
+//         for(int i = 1;i<5;i++){
+//             System.out.println(2*i);
+//         }
+//            System.out.println("Print odd Number: ");
+//         for(int j = 1; j<5;j++){
          
-            System.out.println(2*j+1);
+//             System.out.println(2*j+1);
+//         }
+//     }
+// }
+
+// ----------------------------break continou---------------------
+// public class Practice {
+// public static void main(String[] args) {
+//     for(int i = 0;i<5;i++){
+//         if(i<2){
+//             System.out.println("Java is best");
+//             System.out.println(i);
+//             continue;
+//         }
+//         System.out.println("Thank you!");
+//     }
+    
+// }
+// }
+
+// -------------------------Pattern----------------
+
+// public class Practice {
+
+//     public static void main(String[] args) {
+//         int n = 4;
+//         for(int i = 0;i<n;i++){
+//             for(int j = 0;j<n-i;j++){
+//                 System.out.print("*");
+//             }
+//             System.out.println();
+//         }
+//     }
+// }
+
+// --------------------------nth sum--------------------
+
+public  class Practice{
+    public static void main(String[] args) {
+        int  i = 1;
+        int sum = 0;
+        while (i<=6) {
+            if(i%2==0){
+                sum+=i;
+            }
+          i++;
         }
+        System.out.println("Sum of nth number: "+sum);
     }
 }
