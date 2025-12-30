@@ -1790,4 +1790,36 @@
 //     }
 // }
 
-// ----------------------------
+// ----------------------------Tabel----------------
+
+// import java.util.Scanner;
+
+// public class Practice{
+//     public static void main(String[] args) {
+//         Scanner inp = new Scanner(System.in);
+//          System.out.println("Enter a number  for Tabel: ");
+//          int n  = inp.nextInt();
+
+//          for(int i = 1;i<=10;i++){
+//             System.out.printf( "%d * %d = %d\n",n,i,n*i);
+//          }
+         
+//     }
+// }
+
+// -----------------factorial--------------
+
+import java.util.Scanner;
+
+public class Practice{
+    public static void main(String[] args) {
+        Scanner inp = new Scanner(System.in);
+        System.err.println("Enter a Numb for feb: ");
+        int  n  = inp.nextInt();
+        int feb = 1;
+        for(int i = n ;i>0;i--){
+             feb *=i;
+        }
+        System.out.print("Your Answer is: "+ feb);
+    }
+}
