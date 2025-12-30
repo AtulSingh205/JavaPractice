@@ -1776,16 +1776,18 @@
 
 // --------------------------nth sum--------------------
 
-public  class Practice{
-    public static void main(String[] args) {
-        int  i = 1;
-        int sum = 0;
-        while (i<=6) {
-            if(i%2==0){
-                sum+=i;
-            }
-          i++;
-        }
-        System.out.println("Sum of nth number: "+sum);
-    }
-}
+// public  class Practice{
+//     public static void main(String[] args) {
+//         int  i = 1;
+//         int sum = 0;
+//         while (i<=6) {
+//             if(i%2==0){
+//                 sum+=i;
+//             }
+//           i++;
+//         }
+//         System.out.println("Sum of nth number: "+sum);
+//     }
+// }
+
+// ----------------------------
