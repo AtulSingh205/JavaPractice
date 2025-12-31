@@ -1809,17 +1809,117 @@
 
 // -----------------factorial--------------
 
+// import java.util.Scanner;
+
+// public class Practice{
+//     public static void main(String[] args) {
+//         Scanner inp = new Scanner(System.in);
+//         System.err.println("Enter a Numb for feb: ");
+//         int  n  = inp.nextInt();
+//         int feb = 1;
+//         for(int i = n ;i>0;i--){
+//              feb *=i;
+//         }
+//         System.out.print("Your Answer is: "+ feb);
+//     }
+// }
+
+// -------------------------factorial by while-----------------
+
+// public class Practice{
+//     public static void main(String[] args) {
+//       int  n = 5;
+//       int feb = 1;
+//       int i = n;
+//       while (i>0) {
+//         feb *=i;
+//         i--;
+//       }
+//       System.out.println(feb);
+//     }
+// }
+
+// ------------------------whiile loop patern--------------
+
+
+// public class Practice{
+//     public static void main(String[] args) {
+//         int i =0;
+//         int n =4;
+//         while (i<=n) {
+//             for(int j=1;j<=n-i;j++){
+//                 System.out.print("* ");
+//             }
+//             System.out.println();
+//             i++;
+//         }
+//     }
+// }
+
+// ----------------------Array in Java-----------------
+
+// public class Practice {
+
+//     public static void main(String[] args) {
+
+//         int[] marks = new int[5];
+//         int[] arr = {21,31,41,51,61}; // array declaraion with intalization
+//         for(int i =0;i<arr.length;i++){
+//             System.out.print(arr[i]+" ");
+//         }
+//         System.out.println();
+//         System.out.println("Reverse of array---------");
+//         for(int i =arr.length-1;i>0;i--) System.out.print(arr[i]+" ");
+
+//         System.out.println();
+
+//         System.out.println("Printing Using For Each loop");
+//         for (int i : arr) System.out.print(i+" ");
+//     }
+// }
+
+// --------------------- multidimension-----------------------
+
+// public class Prctice{
+//     public static void main(String[] args) {
+//         int [] [] Marks = new int[2][3];
+//         Marks[0][0]=80;
+//         Marks[0][1]=90;
+//         Marks[0][2]=100;
+//         Marks[1][0]=60;
+//         Marks[1][1]=70;
+//         Marks[1][2]=80;
+
+//         for(int i =0;i<Marks.length;i++){
+//             for(int j = 0;j<Marks[i].length;j++){
+//                 System.out.print(Marks[i][j]+" ");
+//             }
+//             System.out.println();
+//         }
+//     }
+// }
+
+// ------------------------flat.length-----------------
+
 import java.util.Scanner;
 
-public class Practice{
-    public static void main(String[] args) {
-        Scanner inp = new Scanner(System.in);
-        System.err.println("Enter a Numb for feb: ");
-        int  n  = inp.nextInt();
-        int feb = 1;
-        for(int i = n ;i>0;i--){
-             feb *=i;
+public class Prctice {
+
+   public static void main(String[] args) {
+    Scanner inp = new Scanner(System.in);
+    int[] [] arr = new int[2][3];
+    System.out.println("Enter a Element : ");
+    for(int i = 0 ; i<arr.length;i++){
+        for(int j = 0;j<arr[i].length;j++){
+             arr[i][j] = inp.nextInt();
         }
-        System.out.print("Your Answer is: "+ feb);
     }
+    System.out.println("Your enter element are: ");
+    for(int i = 0; i<arr.length;i++){
+        for(int j = 0;j<arr[i].length;j++){
+            System.out.print(arr[i][j]+" ");
+        }
+        System.out.println();
+    }
+   }
 }
