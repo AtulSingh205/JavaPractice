@@ -1899,27 +1899,92 @@
 //     }
 // }
 
-// ------------------------flat.length-----------------
+// ------------------------Sum of array -----------------
 
-import java.util.Scanner;
+// import java.util.Scanner;
 
-public class Prctice {
+// public class Prctice {
 
+//    public static void main(String[] args) {
+//     Scanner inp = new Scanner(System.in);
+//     int[] [] arr = new int[2][3];
+//     System.out.println("Enter a Element : ");
+//     for(int i = 0 ; i<arr.length;i++){
+//         for(int j = 0;j<arr[i].length;j++){
+//              arr[i][j] = inp.nextInt();
+//         }
+//     }
+//     System.out.println("Your enter element are: ");
+//     for(int i = 0; i<arr.length;i++){
+//         for(int j = 0;j<arr[i].length;j++){
+//             System.out.print(arr[i][j]+" ");
+//         }
+//         System.out.println();
+//     }
+//     System.out.println("Your Sum Of Aaray: ");
+//     int sum =0;
+//     for(int i = 0;i<arr.length;i++){
+//         for(int j = 0;j<arr[i].length;j++){
+//             sum += arr[i][j];
+//         }
+//     }
+//     System.out.println("Sum of Array :"+sum );
+//    }
+// }
+
+// -------------------------sum of 2d ----------------
+
+// public class Add{
+//     public static void main(String[] args) {
+//         int [] [] arr = 
+//         {
+//             {1,2,3},
+//             {4,5,6}
+//         };
+//         int [] brr= new int[3];
+//         for(int i = 0;i<arr.length;i++){
+//             for(int j = 0;j<arr[i].length;j++){
+//                 for(int k =i+1;k<arr[i].length;k++){
+//                     brr = arr[i][j]+arr[k][j];
+//                 }
+//             }
+//         }
+        
+//     }
+// }
+
+// --------------------array sum in row  -------------------
+
+// public class Practice {
+//      public static void main(String[] args) {
+//           int [][] arr = {
+//                {1,2,3},
+//                {2,3,4}
+//           };
+//           for(int i = 0;i<arr.length;i++){
+//                int rsum = 0;
+//                for(int j = 0;j<arr[i].length;j++){
+//                     rsum += arr[i][j];
+//                }
+//                System.out.println("row " + i + " sum="+rsum);
+//           }
+//      }
+// }
+
+// ------------------------sum of col--------------------
+
+public  class Csum{
    public static void main(String[] args) {
-    Scanner inp = new Scanner(System.in);
-    int[] [] arr = new int[2][3];
-    System.out.println("Enter a Element : ");
-    for(int i = 0 ; i<arr.length;i++){
-        for(int j = 0;j<arr[i].length;j++){
-             arr[i][j] = inp.nextInt();
+    int [] [] arr = {
+        {1,2,3},
+        {4,5,6}
+    };
+    for(int j =0;j<arr[0].length;j++){
+        int colsum = 0;
+        for(int i = 0;i<arr.length;i++){
+            colsum +=arr[i][j];
         }
-    }
-    System.out.println("Your enter element are: ");
-    for(int i = 0; i<arr.length;i++){
-        for(int j = 0;j<arr[i].length;j++){
-            System.out.print(arr[i][j]+" ");
-        }
-        System.out.println();
+        System.out.println("A colsum of: "+ j +" is "+colsum);
     }
    }
 }
