@@ -1738,7 +1738,7 @@
 //         }
 //            System.out.println("Print odd Number: ");
 //         for(int j = 1; j<5;j++){
-         
+
 //             System.out.println(2*j+1);
 //         }
 //     }
@@ -1755,7 +1755,7 @@
 //         }
 //         System.out.println("Thank you!");
 //     }
-    
+
 // }
 // }
 
@@ -1803,7 +1803,7 @@
 //          for(int i = 1;i<=10;i++){
 //             System.out.printf( "%d * %d = %d\n",n,i,n*i);
 //          }
-         
+
 //     }
 // }
 
@@ -1840,7 +1840,6 @@
 // }
 
 // ------------------------whiile loop patern--------------
-
 
 // public class Practice{
 //     public static void main(String[] args) {
@@ -1949,7 +1948,7 @@
 //                 }
 //             }
 //         }
-        
+
 //     }
 // }
 
@@ -1973,18 +1972,243 @@
 
 // ------------------------sum of col--------------------
 
-public  class Csum{
-   public static void main(String[] args) {
-    int [] [] arr = {
-        {1,2,3},
-        {4,5,6}
-    };
-    for(int j =0;j<arr[0].length;j++){
-        int colsum = 0;
-        for(int i = 0;i<arr.length;i++){
-            colsum +=arr[i][j];
-        }
-        System.out.println("A colsum of: "+ j +" is "+colsum);
-    }
-   }
-}
+// public  class Csum{
+//    public static void main(String[] args) {
+//     int [] [] arr = {
+//         {1,2,3},
+//         {4,5,6}
+//     };
+//     for(int j =0;j<arr[0].length;j++){
+//         int colsum = 0;
+//         for(int i = 0;i<arr.length;i++){
+//             colsum +=arr[i][j];
+//         }
+//         System.out.println("A colsum of: "+ j +" is "+colsum);
+//     }
+//    }
+// }
+
+// -------------------sum of matrix-----------------
+
+// public class Matrix{
+//     public static void main(String[] args) {
+//         int [] [] arr1= {{1,2,3},{4,5,6}};
+//         int [] [] arr2= {{6,7,8},{9,10,11}};
+//         int [] [] arr3 = new int[2][3];
+
+//         for(int i =0;i<arr1.length;i++){
+//             for(int j =0;j<arr1[0].length;j++){
+//                 arr3[i][j]=arr1[i][j]+arr2[i][j];
+//             }
+
+//         }
+//     for(int i = 0;i<arr3.length;i++){
+//         for(int j =0;j<arr3[0].length;j++){
+//             System.out.print(arr3[i][j]+" ");
+//         }
+//         System.out.println();
+//     }
+
+//     }
+// } 
+
+// ----------------------reverse Array -----------------
+
+// public class Rev{
+//     public static void main(String[] args) {
+//         int  [] rev= {1,2,3,4,5};
+//         for(int  i = rev.length-1;i>=0;i--){
+//               System.out.println("rev position : "+i+" place of : "+rev[i]+" ");
+//         }
+//     }
+// }
+
+// ------------------------sorted arrray------------------
+
+// public class Soted{
+
+//     public static void main(String[] args) {
+//         boolean isSorted = true;
+//         int[] arr ={2,4,5,2,1};
+//         for(int i =0;i<arr.length-1;i++){
+//             if(arr[i]>arr[i+1]){
+//                 isSorted = false;
+//                 break;
+
+//             }
+//         }
+//          if(isSorted) System.out.println("This is a Sorted array");
+//          else System.out.println("This is not a sorted array");
+
+//     }
+// }
+
+// ----------------------compexity-------------------
+
+//  public class Practice {
+//    public static void main(String[] args) {
+//     int[] arr = {5,1,3,4,2,4};
+//     System.out.println(arr.length);
+//     boolean[] Flag = new boolean[arr.length];
+//     for(int i =0; i < arr.length;i++){
+//              int elem = arr[i];
+//              if(Flag[elem]==true) System.out.println("This is a duplicate elem");
+//              else{
+//                 Flag[elem] = true;
+//             }
+//         }
+//     }
+// }
+
+//  ---------------------------2nd Approch-------------
+
+// public class Practice{
+//     public static void main(String[] args) {
+//         int[] arr = {5,1,3,4,2,4};
+//         int n = arr.length;
+//         int sumOfArr = 0;
+//         for(int i = 0;i<n;i++){
+//             sumOfArr += arr[i];
+//         }
+//         System.out.println("Sum of arr is : "+sumOfArr);
+//         int cal = (n-1)*n/2;
+//         System.out.println("Mathmatics opr perform: "+cal);
+//         int sub = sumOfArr-cal;
+//         System.out.println("A Duplicate Arrayn element is: "+sub);
+//     }
+// }
+
+// ---------------------Bubbel sort----------------
+
+// public class Soert{
+
+//     public static void main(String[] args) {
+//          int[] arr = {5,-2,6,7,2,0,7,2};
+//          int n = arr.length-1;
+//          int swap =0;
+//          int loop = 0;
+//          for(int i = 0;i<n;i++){
+//             for(int j = 0;j<n-i;j++){
+//                 if(arr[j]>arr[j+1]){
+//                     int temp = arr[j];
+//                     arr[j]=arr[j+1];
+//                     arr[j+1]=temp;
+//                     swap++;
+//                 }
+//               loop++;
+//             }
+//         }
+//         for(int j = 1;j<=n;j++){
+//             System.out.print(arr[j]);
+//         }
+//         System.out.println();
+//         System.out.println("A Swap happen Count:  "+swap);
+//         System.out.println("A inner loop run :  "+loop);
+//     }
+
+// }
+
+// --------------------------Bubbel sort reverse --------------------
+
+// public class Reverse {
+//     public static void main(String[] args) {
+//         int[] arr = { 5, -2, 6, 7, 2 };
+//         int n = arr.length;
+//         for (int i = n; i > 0; i--) {
+//             boolean isSorted = true;
+//             for (int j = n; j > 0; j--) {
+//                 if (arr[j] < arr[j - 1]) {
+//                     isSorted = false;
+//                     break;
+//                 }
+//             }
+//             if (isSorted == true) {
+//                 for (int k = n; k > 0; k--) {
+//                     if (arr[k] > arr[k - 1]) {
+//                         int temp = arr[k];
+//                         arr[k] = arr[k - 1];
+//                         arr[k - 1] = temp;
+//                     }
+//                 }
+//             }
+//             for(i=0;i<n;i++){
+//                 System.out.print(arr[i]+" ");
+//             }
+//         }
+
+//     }
+// }
+
+// ---------------------bubbel sort forloopp-------------
+
+// public class Reverse{
+//     public static void main(String[] args) {
+//         int[] arr = {5,-2,6,7,2};
+//         int n = arr.length;
+//         int cnt = 0 ;
+//         for(int i = 0;i<n-1;i++){
+//             boolean isSorted = true;
+//             for(int j = 0;j<n-1;j++){
+//                if(arr[j]<arr[j+1]){
+//                 int temp = arr[j];
+//                 arr[j]=arr[j+1];
+//                 arr[j+1]=temp;
+//                 cnt++;
+//                 isSorted = false; 
+//                }
+//             }
+//             if(isSorted) break;
+//         }
+//         System.out.println(cnt);
+//         for (int i : arr) {
+//             System.out.print(i+" ");
+//         }
+//     }
+// }
+
+// ------------------------sort the zero-----------------------
+
+// public class Zero{
+//     public static void main(String[] args) {
+//         int [] arr = {1,-2,0,3,4,0};
+//         for(int  i = 0;i<arr.length-1;i++){
+//             for(int j = 0;j<arr.length-1;j++){
+//                 if(arr[j]==0){
+//                     int  temp = arr[j];
+//                     arr[j] = arr[j+1];
+//                     arr[j+1]= temp;
+//                 }
+//             }
+//         }
+//         System.out.print("Last Comes zero----------");
+//        for (int i : arr) {
+//         System.out.print(i+" ");
+//        }
+//     }
+// }
+
+// ------------------------Buubel Sort Zero----------------
+
+// public class Zero {
+//     public static void main(String[] args) {
+//         int[] arr = { 1, -2, 0, 3, 4, 0 };
+//         int n = arr.length;
+//         int swap = 0;
+//         for (int i = 0; i < n; i++) {
+//              for (int j = n - 1; j > 0; j--) {
+//                 if (arr[j] == 0 && arr[j - 1] != 0) {
+//                     int temp = arr[j];
+//                     arr[j] = arr[j - 1];
+//                     arr[j - 1] = temp;
+//                     swap++;
+//                 }
+//             }
+//         }
+//         System.out.println(swap);
+//         for (int i : arr) {
+//             System.out.print(i + " ");
+//         }
+//     }
+// }
+
+// ------------------------
